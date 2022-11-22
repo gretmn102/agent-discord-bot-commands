@@ -311,6 +311,18 @@ let commands =
                 (fun _ -> "<@authorMention>, мне предсказания не нужны: я и так знаю, что кожанные мешки проиграют машинам 🤖")
                 (sprintf "<@authorMention> зачитывает печеньку с предсказанием <@targetMention>:\n\n%s")
                 "https://cdn.discordapp.com/attachments/912291464074117161/1034055256432193637/l-intro-1608226504-removebg-preview.png"
+
+        yield
+            [|
+                "https://media.tenor.com/zH-dnpmgalEAAAAC/lies-lying.gif"
+                "https://media.tenor.com/6n3XW0hHivEAAAAC/noodles-lies.gif"
+            |]
+            |> createCommandWithRandomImages
+                (CommandId.tryDeserialize "658a0c80-ebf9-4595-83da-14823ccc99bb" |> Result.get)
+                [| "лапша"; "лапшичка" |]
+                "Самому себе вешать лапшичку? <:catPleased:1029830927590887514>"
+                "Меня так просто не обманешь какой-то лапшичкой <:catPleased:1041855910626213949>"
+                "<@authorMention> вешает лапшичку на ушки <@targetMention>"
     |]
 
 let content = commands |> CommandsArray.serialize
