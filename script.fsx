@@ -111,6 +111,7 @@ let commands =
                 "https://c.tenor.com/CMD-o3NJdV4AAAAC/wonder-woman-lovers-carry.gif"
                 "https://c.tenor.com/3Qmu-zdjFIwAAAAC/carry-shoulder.gif"
                 "https://c.tenor.com/ydSMRf34XvEAAAAC/spin-carry.gif"
+                "https://c.tenor.com/Uuo1-iiB-AcAAAAM/couple-hug.gif"
             |]
             |> createCommandWithRandomImages
                 (CommandId.tryDeserialize "70704d5a-5e2d-42d8-937c-97a7a4127e6d" |> Result.get)
@@ -144,6 +145,7 @@ let commands =
                 "https://c.tenor.com/bNSOiEO_0loAAAAd/cat-tail.gif"
                 "https://c.tenor.com/TnXmJgMoU5IAAAAC/cat-tail.gif"
                 "https://c.tenor.com/kWJaRBz4jzYAAAAC/elephant-omg.gif"
+                "https://media.tenor.com/NaaUB2i0EjsAAAAd/cat-lazy.gif"
             |]
             |> createCommandWithRandomImages
                 (CommandId.tryDeserialize "177afdd0-c24c-4b16-bc17-c8ff9dcf1c9a" |> Result.get)
@@ -381,6 +383,51 @@ let commands =
                 "<:catPleased:1041855910626213949>"
                 false
                 "<@authorMention> изображает Адалинду <@targetMention>:"
+                true
+
+        yield
+            [|
+                "https://cdn.discordapp.com/emojis/1029835643834077315.webp?size=1024&quality=lossless"
+            |]
+            |> createCommandWithRandomImages2
+                (CommandId.tryDeserialize "7896133a-b6e7-4f25-a738-a6ac591f59b5" |> Result.get)
+                [| "морай" |]
+                "<@authorMention> изображает Морая:"
+                true
+                "<:catPleased:1041855910626213949>"
+                false
+                "<@authorMention> изображает Морая <@targetMention>:"
+                true
+
+        yield
+            [|
+                "https://cdn.discordapp.com/attachments/859253126878724126/965700589084377168/unknown.png"
+                "https://media.tenor.com/CbWKthhbhEoAAAAC/insane-fast-typing-cat.gif"
+                "https://media.tenor.com/DaSh5T93TgUAAAAC/cat-typing.gif"
+                "https://cdn.discordapp.com/emojis/756060948355088394.png"
+            |]
+            |> createCommandWithRandomImages2
+                (CommandId.tryDeserialize "9ec79d65-052b-461f-acba-9c91a3302ac1" |> Result.get)
+                [| "агент" |]
+                "<@authorMention> изображает Агента:"
+                true
+                "<:catPleased:1041855910626213949>"
+                false
+                "<@authorMention> изображает Агента <@targetMention>:"
+                true
+
+        yield
+            [|
+                "https://i.gifer.com/g2Uz.gif"
+            |]
+            |> createCommandWithRandomImages2
+                (CommandId.tryDeserialize "fb3e7fe1-be43-4657-a504-11e8ca608c6b" |> Result.get)
+                [| "массаж" |]
+                "<@authorMention> делает себе массаж:"
+                true
+                "<:catPleased:1041855910626213949>"
+                false
+                "<@authorMention> делает массаж <@targetMention>:"
                 true
     |]
 
