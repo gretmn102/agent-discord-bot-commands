@@ -449,6 +449,24 @@ let commands =
                 false
                 "<@authorMention> прячется за <@targetMention>:"
                 true
+
+        yield
+            [|
+                "https://media.tenor.com/irsckaQsr2QAAAAC/thief-stealing.gif"
+                "https://c.tenor.com/tZmUCW4iRJEAAAAd/vampire-cat-steal-steal-vampire.gif"
+                "https://c.tenor.com/sh_5zpuzWs4AAAAd/cat-pull-cat-snatch.gif"
+                "https://c.tenor.com/r4wPECrdcysAAAAd/cat-goes-away.gif"
+                "https://c.tenor.com/8-8e3JtHTicAAAAd/cat-yeet.gif"
+            |]
+            |> createCommandWithRandomImages2
+                (CommandId.tryDeserialize "bf674738-583f-4764-aef7-df390c673e0e" |> Result.get)
+                [| "украсть"; "snatch" |]
+                "<@authorMention> крадет себя:"
+                true
+                "Не надо меня красть! 🙀"
+                false
+                "<@authorMention> крадет <@targetMention>, спасайте! 🙀"
+                true
     |]
 
 let content = commands |> CommandsArray.serialize
