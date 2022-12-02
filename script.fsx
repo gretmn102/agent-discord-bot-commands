@@ -140,7 +140,6 @@ let commands =
 
         yield
             [|
-                "https://c.tenor.com/8yvB03LKh6cAAAAd/wow-cat.gif"
                 "https://c.tenor.com/_SHZ8ZyLYL8AAAAC/flirty-flirt.gif"
                 "https://c.tenor.com/bNSOiEO_0loAAAAd/cat-tail.gif"
                 "https://c.tenor.com/TnXmJgMoU5IAAAAC/cat-tail.gif"
@@ -167,12 +166,16 @@ let commands =
 
         yield
             [|
-                "https://risovach.ru/upload/2012/11/lyubov-4219820_orig_.jpeg"
-                "https://i.imgur.com/ArtzYH0.jpg"
+                // "https://risovach.ru/upload/2012/11/lyubov-4219820_orig_.jpeg"  // стебные
+                // "https://i.imgur.com/ArtzYH0.jpg" // стебные
+                "https://media.tenor.com/qy2BfZWRGDYAAAAC/admire.gif"
+                "https://media.tenor.com/MEGTI1brCBoAAAAC/aww-so-in-love.gif"
+                "https://media.tenor.com/5w5YGzdrlgoAAAAC/smile-dreamy.gif"
+                "https://media.tenor.com/VaNHuhM2hxcAAAAC/yes-patrick.gif"
             |]
             |> createCommandWithRandomImages
                 (CommandId.tryDeserialize "a2df140b-efe1-4ff7-8468-d1e26f120d9a" |> Result.get)
-                [| "admire"; "любоваться" |]
+                [| "admire"; "любоваться"; "любуется" |]
                 "Нельзя любоваться собой :eyes:"
                 "Нельзя мною любоваться :scream_cat:"
                 "<@authorMention> любуется <@targetMention>"
@@ -219,7 +222,7 @@ let commands =
         yield
             [|
                 "https://media.tenor.com/iFjm7dyo_-MAAAAd/cat-bite.gif"
-                "https://media.tenor.com/WVRAumVRwi4AAAAS/cat.gif"
+                "https://media.tenor.com/WVRAumVRwi4AAAAd/cat.gif"
                 "https://media.tenor.com/wI_QPAY2G1cAAAAd/cat-bites-lip.gif"
                 "https://media.tenor.com/yVKQAhFuGZQAAAAC/cat-bite.gif"
                 "https://media.tenor.com/bB9rBu4CZxoAAAAd/cat-bite.gif"
@@ -418,7 +421,19 @@ let commands =
 
         yield
             [|
-                "https://i.gifer.com/g2Uz.gif"
+                "https://cdn.discordapp.com/attachments/899245715316965446/1047915227347423292/massage.gif"
+                "https://media.tenor.com/EwJDL0rrPugAAAAd/cat-massage.gif"
+                "https://media.tenor.com/kfIyTd_HbZcAAAAC/massage.gif"
+                "https://media.tenor.com/W12FJPalZMsAAAAC/massage-dudu.gif"
+                "https://media.tenor.com/W6IcNCDOakcAAAAC/babi-ko.gif"
+                "https://media.tenor.com/nSo86v_MXE0AAAAC/squaril.gif"
+                "https://media.tenor.com/HbikpJIowHYAAAAC/massage.gif"
+                "https://media.tenor.com/KUrcCrz_3pcAAAAC/mochi-mochi-peach-cat-cute.gif"
+                "https://media.tenor.com/pZHT2Pwe7v8AAAAd/cat-massage-cat.gif"
+                "https://media.tenor.com/sb2aDjBRrFwAAAAC/cats-massage.gif"
+                "https://media.tenor.com/P2PITomgV4YAAAAC/cats.gif"
+                "https://media.tenor.com/63hKT9buoDIAAAAC/cute-kitty.gif"
+                "https://media.tenor.com/81JkOtzZjQsAAAAC/duck-foot-rub.gif"
             |]
             |> createCommandWithRandomImages2
                 (CommandId.tryDeserialize "fb3e7fe1-be43-4657-a504-11e8ca608c6b" |> Result.get)
@@ -439,6 +454,10 @@ let commands =
                 "https://cdn.discordapp.com/attachments/1034059525495455764/1047616285216882769/cat-hide.gif"
                 "https://cdn.discordapp.com/attachments/1034059525495455764/1047616285653086308/cat-hiding.gif"
                 "https://cdn.discordapp.com/attachments/1034059525495455764/1047616286311596063/cat-shy.gif"
+                "https://media.tenor.com/r4v3wuoctrYAAAAC/cat-hidden.gif"
+                "https://media.tenor.com/O-h718UvzWIAAAAd/hiding-introvert.gif"
+                "https://media.tenor.com/o9RaryfKDOgAAAAd/cat-kitty.gif" // на себя
+                "https://media.tenor.com/7ERSsZ-KTvkAAAAd/cat-face-planted-on-the-bushes-viralhog.gif" //  на себя
             |]
             |> createCommandWithRandomImages2
                 (CommandId.tryDeserialize "381b173e-9e64-4665-94dd-a1cb79c1a7b2" |> Result.get)
@@ -466,6 +485,155 @@ let commands =
                 "Не надо меня красть! 🙀"
                 false
                 "<@authorMention> крадет <@targetMention>, спасайте! 🙀"
+                true
+
+        yield
+            [|
+                "https://media.tenor.com/B90mA02D_RkAAAAd/face-massage-kitten.gif"
+                "https://media.tenor.com/K5SZOyxVUokAAAAd/cute-cat.gif"
+                "https://media.tenor.com/mUUp5aMUIxkAAAAC/disney-cute.gif" // TODO: это надо на себя
+                "https://media.tenor.com/oVPr0f0MtmkAAAAd/cat-face-massage.gif"
+                "https://media.tenor.com/Tx1SfMNQtdAAAAAC/cute-kitten.gif"
+                "https://media.tenor.com/w-IKBrrstF4AAAAC/pinching-cheeks-aww.gif"
+                "https://media.tenor.com/iiPcPAuOjaMAAAAd/squishy-kitty-cat.gif"
+                "https://media.tenor.com/QncOj9EgFQEAAAAC/cheeks-cute.gif" // TODO: на себя
+                "https://media.tenor.com/UX0_hloOPj4AAAAC/pull-shibainu.gif"
+            |]
+            |> createCommandWithRandomImages2
+                (CommandId.tryDeserialize "2f1b48cd-bc04-4ed5-944b-6cf3fa0d79f3" |> Result.get)
+                [| "щечки" |]
+                "<@authorMention> разминает себе щечки:"
+                true
+                "Не надо мне щечки мять, бу! 🙀"
+                false
+                "<@authorMention> разминает щечки <@targetMention>:"
+                true
+
+        yield
+            [|
+                "https://media.tenor.com/BdORj1n-kYsAAAAC/rammstein.gif"
+                "https://media.tenor.com/4cMGEIhiXDoAAAAC/whatever-you-say-so-dont-care.gif"
+            |]
+            |> createCommandWithRandomImages2
+                (CommandId.tryDeserialize "e1ec1965-e318-47d6-8bcc-a099868eb7e1" |> Result.get)
+                [| "ойвсе"; "ойвсё" |]
+                "<@authorMention> ойвсёкает на себя:"
+                true
+                "Не надо меня ойвсёкать! 🙀"
+                false
+                "<@authorMention> ойвсёкает на <@targetMention>:"
+                true
+
+        yield
+            [|
+                "https://cdn.discordapp.com/emojis/952317602594693171.webp?size=1024"
+            |]
+            |> createCommandWithRandomImages2
+                (CommandId.tryDeserialize "fbca5dff-0d36-401b-a880-e75f671db249" |> Result.get)
+                [| "максим" |]
+                "<@authorMention> изображает Максима:"
+                true
+                "Не надо на меня изображать Максима! 🙀"
+                false
+                "<@authorMention> изображает Максима <@targetMention>:"
+                true
+
+        yield
+            [|
+                "https://c.tenor.com/eaYWFPJBj8wAAAAd/manul-warms-his-paws.gif"
+                "https://cdn.discordapp.com/attachments/864883475386990664/895712522831806494/Screenshot_20181219-152732_2.jpg"
+                "https://cdn.discordapp.com/attachments/864883475386990664/895931456755478528/Screenshot_20181219-151254_1.jpg"
+                "https://cdn.discordapp.com/attachments/864883475386990664/895931600775307294/Screenshot_20181219-151451_1.jpg"
+                "https://cdn.discordapp.com/attachments/864883475386990664/895931730056327219/Screenshot_20181219-151339_1.jpg"
+                "https://cdn.discordapp.com/attachments/864883475386990664/895931854216114186/Screenshot_20181219-151417_1.jpg"
+                "https://cdn.discordapp.com/attachments/864883475386990664/895932260405092362/Screenshot_20181219-152635_1.jpg"
+                "https://cdn.discordapp.com/attachments/864883475386990664/895938189229965322/Screenshot_20181219-152706_1.jpg"
+                "https://cdn.discordapp.com/attachments/864883475386990664/896372453222252564/Screenshot_20181219-152719_1.jpg"
+                "https://cdn.discordapp.com/attachments/864883475386990664/898455985977450526/Screenshot_20181219-152649_2.jpg"
+                "https://cdn.discordapp.com/attachments/864883475386990664/899743293557059614/Screenshot_20181219-152725_1.jpg"
+                "https://cdn.discordapp.com/attachments/864883475386990664/938488951755399208/manul.gif"
+                "https://cdn.discordapp.com/attachments/864883475386990664/939977295282728982/Manul_5.jpg"
+                "https://cdn.discordapp.com/attachments/876541671997837312/953350018385997824/--4492039.png"
+                "https://www.poznavayka.org/wp-content/uploads/2019/02/Tibetskiy-manul.jpg"
+                "https://www.poznavayka.org/wp-content/uploads/2019/02/manul-skalitsya.jpg"
+            |]
+            |> createCommandWithRandomImages2
+                (CommandId.tryDeserialize "e21881d7-de61-40cc-a2b9-d1fb35c75ce7" |> Result.get)
+                [| "манул" |]
+                "<@authorMention> изображает Манула:"
+                true
+                "Не надо на меня изображать Манула! 🙀"
+                false
+                "<@authorMention> изображает Манула <@targetMention>:"
+                true
+
+        yield
+            [|
+                "https://media.tenor.com/EKXJk3DT7asAAAAC/granny-samurai-prank.gif"
+                "https://media.tenor.com/e11XngUvFJcAAAAd/funny-fight.gif"
+                "https://media.tenor.com/IAWAXiLVq_QAAAAd/ski-jump-skiing.gif"
+            |]
+            |> createCommandWithRandomImages2
+                (CommandId.tryDeserialize "443c7b13-cced-4c0d-8c3c-ebe959451335" |> Result.get)
+                [| "светлана" |]
+                "<@authorMention> изображает Светлану:"
+                true
+                "Не надо на меня изображать Светлану! 🙀"
+                false
+                "<@authorMention> изображает Светлану <@targetMention>:"
+                true
+
+        yield
+            [|
+                "https://cdn.discordapp.com/attachments/927554008263032836/1047932343282831460/Screenshot_20220501_012352_com.yandex.browser.jpg"
+                "https://cdn.discordapp.com/attachments/927585487332466778/992920732168360077/unknown.png"
+                "https://cdn.discordapp.com/attachments/927585487332466778/992918627319812126/unknown.png"
+                "https://cdn.discordapp.com/attachments/927585487332466778/992917007479619584/unknown.png"
+                "https://cdn.discordapp.com/attachments/927585487332466778/964562528896155688/unknown.png"
+            |]
+            |> createCommandWithRandomImages2
+                (CommandId.tryDeserialize "d03cde9a-6cde-4c12-8ba1-8d0ecbeceda9" |> Result.get)
+                [| "мухлевщица" |]
+                "<@authorMention> изображает мухлевщицу:"
+                true
+                "Не надо на меня изображать мухлевщицу! 🙀"
+                false
+                "<@authorMention> изображает мухлевщицу <@targetMention>:"
+                true
+
+        yield
+            [|
+                "https://cdn.discordapp.com/attachments/927585487332466778/992916619552628806/unknown.png"
+                "https://cdn.discordapp.com/attachments/927585487332466778/964565906095239199/unknown.png"
+                "https://cdn.discordapp.com/attachments/927554008263032836/1047934663160770590/unknown.png"
+                "https://cdn.discordapp.com/attachments/927554008263032836/1047934757637472338/unknown.png"
+                "https://cdn.discordapp.com/attachments/859253126878724126/1047944938102460416/unknown.png"
+            |]
+            |> createCommandWithRandomImages2
+                (CommandId.tryDeserialize "96351f4a-7afc-4d51-a982-64a1b370b688" |> Result.get)
+                [| "мухлевщик" |]
+                "<@authorMention> изображает мухлевщика:"
+                true
+                "Не надо на меня изображать мухлевщика! 🙀"
+                false
+                "<@authorMention> изображает мухлевщика <@targetMention>:"
+                true
+
+        yield
+            [|
+                "https://cdn.discordapp.com/attachments/927554008263032836/1047936865258459156/image0.gif"
+                "https://media.tenor.com/Vt41WQiX4MwAAAAC/singing-littlebitofab.gif"
+                "https://media.tenor.com/vW6-Vnyvu3kAAAAC/budding-pop-sing.gif"
+                "https://media.tenor.com/O09x7_40xeIAAAAi/dance.gif"
+            |]
+            |> createCommandWithRandomImages2
+                (CommandId.tryDeserialize "08c84eb2-d430-44d3-8618-698a1adf90b5" |> Result.get)
+                [| "линочка" |]
+                "<@authorMention> изображает Линочку:"
+                true
+                "Не надо на меня изображать Линочку! 🙀"
+                false
+                "<@authorMention> изображает Линочку <@targetMention>:"
                 true
     |]
 
