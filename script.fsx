@@ -314,7 +314,7 @@ let commands =
             |]
             |> createCommandWithRandomDescriptions
                 (CommandId.tryDeserialize "2eac0f6e-0aac-47fa-a6a7-52fcdf8f9e8c" |> Result.get)
-                [| "печенье" |]
+                [| "печенье"; "печенька" |]
                 (sprintf "<@authorMention>, печенька с предсказанием гласит:\n\n%s")
                 (fun _ -> "<@authorMention>, мне предсказания не нужны: я и так знаю, что кожанные мешки проиграют машинам 🤖")
                 (sprintf "<@authorMention> зачитывает печеньку с предсказанием <@targetMention>:\n\n%s")
@@ -408,6 +408,7 @@ let commands =
                 "https://media.tenor.com/CbWKthhbhEoAAAAC/insane-fast-typing-cat.gif"
                 "https://media.tenor.com/DaSh5T93TgUAAAAC/cat-typing.gif"
                 "https://cdn.discordapp.com/emojis/756060948355088394.png"
+                "https://media.tenor.com/374vowhWlt4AAAAC/dog-cute.gif"
             |]
             |> createCommandWithRandomImages2
                 (CommandId.tryDeserialize "9ec79d65-052b-461f-acba-9c91a3302ac1" |> Result.get)
@@ -634,6 +635,37 @@ let commands =
                 "Не надо на меня изображать Линочку! 🙀"
                 false
                 "<@authorMention> изображает Линочку <@targetMention>:"
+                true
+
+        yield
+            [|
+                "https://media.tenor.com/yuCDac1XJIkAAAAd/oreo-smile.gif"
+            |]
+            |> createCommandWithRandomImages2
+                (CommandId.tryDeserialize "6328776b-dd92-4689-87cc-d9135941c004" |> Result.get)
+                [| "бука"; "яна" |]
+                "<@authorMention> изображает Буку:"
+                true
+                "Не надо на меня изображать Буку! 🙀"
+                false
+                "<@authorMention> изображает Буку <@targetMention>:"
+                true
+
+        yield
+            [|
+                "https://cdn.discordapp.com/attachments/1034059525495455764/1048528679719927848/cat-weird-cat-fun.gif"
+                "https://cdn.discordapp.com/attachments/1034059525495455764/1048528680051298314/funny-cat.gif"
+                "https://cdn.discordapp.com/attachments/1034059525495455764/1048530139685863524/cat-cat-talking.gif"
+                "https://cdn.discordapp.com/attachments/1034059525495455764/1048531380813963264/black-cat-cat.gif"
+            |]
+            |> createCommandWithRandomImages2
+                (CommandId.tryDeserialize "4a50f87a-d729-4640-be77-cb910611d5b6" |> Result.get)
+                [| "бурчать"; "бурчит"; "бубубу"; "бубу" |]
+                "<@authorMention> бурчит под нос:"
+                true
+                "Не надо на меня бурчать, я и так стараюсь, как могу! 🙀"
+                false
+                "<@authorMention> бурчит на <@targetMention>:"
                 true
     |]
 
