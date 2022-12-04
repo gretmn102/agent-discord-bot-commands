@@ -204,13 +204,17 @@ let commands =
 
         yield
             [|
-                "https://c.tenor.com/ikKAd57zDEwAAAAd/anime-mad.gif"
-                "https://c.tenor.com/rzDkOlEDun0AAAAC/hayase-nagatoro-nagatoro-angry.gif"
-                "https://c.tenor.com/kTOmea7XdH4AAAAC/anime-angry.gif"
-                "https://c.tenor.com/7rIJkf8pB2EAAAAd/a-channel-tooru.gif"
-                "https://c.tenor.com/NxIgKHx6bu0AAAAC/glare-anger.gif"
-                "https://c.tenor.com/0YwfR1RlISEAAAAC/angry-fist-angry-fist-arthur.gif"
-                "https://c.tenor.com/Hn87zvoPNkAAAAAC/fire-bear.gif"
+                // "https://c.tenor.com/ikKAd57zDEwAAAAd/anime-mad.gif"
+                // "https://c.tenor.com/rzDkOlEDun0AAAAC/hayase-nagatoro-nagatoro-angry.gif"
+                // "https://c.tenor.com/kTOmea7XdH4AAAAC/anime-angry.gif"
+                // "https://c.tenor.com/7rIJkf8pB2EAAAAd/a-channel-tooru.gif"
+                // "https://c.tenor.com/NxIgKHx6bu0AAAAC/glare-anger.gif"
+                // "https://c.tenor.com/0YwfR1RlISEAAAAC/angry-fist-angry-fist-arthur.gif"
+                // "https://c.tenor.com/Hn87zvoPNkAAAAAC/fire-bear.gif"
+                "https://media.tenor.com/4rBafeqPOj0AAAAC/mad-angry.gif"
+                "https://media.tenor.com/gWVekiI5onwAAAAC/madcat-ygzcat.gif"
+                "https://media.tenor.com/qzimWk_DVYUAAAAd/cat-angry-angry.gif"
+                "https://media.tenor.com/SN6EKkspK5UAAAAd/suspense-suspicious.gif"
             |]
             |> createCommandWithRandomImages
                 (CommandId.tryDeserialize "61a620d4-405b-46f7-a9a9-83aadfa5dfe0" |> Result.get)
@@ -227,6 +231,8 @@ let commands =
                 "https://media.tenor.com/yVKQAhFuGZQAAAAC/cat-bite.gif"
                 "https://media.tenor.com/bB9rBu4CZxoAAAAd/cat-bite.gif"
                 "https://media0.giphy.com/media/XtuYDes6uyL4Y/giphy.gif"
+                "https://media.tenor.com/p9AJkXcmJucAAAAC/nom-tik-tok.gif"
+                "https://cdn.discordapp.com/attachments/876498372939382784/948864222912204800/03e6f05d01f87f934a5c2b547bf77e61.jpg"
             |]
             |> createCommandWithRandomImages
                 (CommandId.tryDeserialize "a453fb4d-c9f8-46b5-802b-4534a665a2c3" |> Result.get)
@@ -377,6 +383,9 @@ let commands =
                 "https://cdn.discordapp.com/attachments/859253126878724126/1005264669004537946/542d31cb59bf2bc9.jpg"
                 "https://cdn.discordapp.com/attachments/859253126878724126/961036289925337118/unknown.png"
                 "https://upload.wikimedia.org/wikipedia/commons/0/06/Jove_decadent.jpg"
+                "https://cdn.discordapp.com/attachments/821693841718771724/1048505953131171911/B_-u7MnJO_G12amayezRHnfpc6JIAqOavzk1gayFHrwmw7X7Q3OaMNbq6tkK2IE_4GXh0zkrBD1Bj_EyzcCE7_R4.jpg"
+                "https://media.tenor.com/igJNrzoEWiwAAAAC/faint-drama.gif"
+                "https://media.tenor.com/BLyoWqxTQ3gAAAAC/darkwing-duck-gosalyn-mallard.gif"
             |]
             |> createCommandWithRandomImages2
                 (CommandId.tryDeserialize "0195eb5a-771c-463b-bc32-afcf2a60d636" |> Result.get)
@@ -409,6 +418,7 @@ let commands =
                 "https://media.tenor.com/DaSh5T93TgUAAAAC/cat-typing.gif"
                 "https://cdn.discordapp.com/emojis/756060948355088394.png"
                 "https://media.tenor.com/374vowhWlt4AAAAC/dog-cute.gif"
+                "https://media.tenor.com/uoAnIlKgLSUAAAAd/what-cat.gif"
             |]
             |> createCommandWithRandomImages2
                 (CommandId.tryDeserialize "9ec79d65-052b-461f-acba-9c91a3302ac1" |> Result.get)
@@ -459,6 +469,7 @@ let commands =
                 "https://media.tenor.com/O-h718UvzWIAAAAd/hiding-introvert.gif"
                 "https://media.tenor.com/o9RaryfKDOgAAAAd/cat-kitty.gif" // на себя
                 "https://media.tenor.com/7ERSsZ-KTvkAAAAd/cat-face-planted-on-the-bushes-viralhog.gif" //  на себя
+                "https://media.tenor.com/2pdRqiTB2GMAAAAC/cat-leave-me-alone.gif" // на себя
             |]
             |> createCommandWithRandomImages2
                 (CommandId.tryDeserialize "381b173e-9e64-4665-94dd-a1cb79c1a7b2" |> Result.get)
@@ -499,6 +510,7 @@ let commands =
                 "https://media.tenor.com/iiPcPAuOjaMAAAAd/squishy-kitty-cat.gif"
                 "https://media.tenor.com/QncOj9EgFQEAAAAC/cheeks-cute.gif" // TODO: на себя
                 "https://media.tenor.com/UX0_hloOPj4AAAAC/pull-shibainu.gif"
+                "https://media.tenor.com/EZelAU6S6McAAAAd/mochicat-cute.gif"
             |]
             |> createCommandWithRandomImages2
                 (CommandId.tryDeserialize "2f1b48cd-bc04-4ed5-944b-6cf3fa0d79f3" |> Result.get)
@@ -573,6 +585,7 @@ let commands =
                 "https://media.tenor.com/EKXJk3DT7asAAAAC/granny-samurai-prank.gif"
                 "https://media.tenor.com/e11XngUvFJcAAAAd/funny-fight.gif"
                 "https://media.tenor.com/IAWAXiLVq_QAAAAd/ski-jump-skiing.gif"
+                "https://media.tenor.com/UqEPGGQJX1UAAAAC/ta-chegando.gif"
             |]
             |> createCommandWithRandomImages2
                 (CommandId.tryDeserialize "443c7b13-cced-4c0d-8c3c-ebe959451335" |> Result.get)
@@ -591,6 +604,15 @@ let commands =
                 "https://cdn.discordapp.com/attachments/927585487332466778/992918627319812126/unknown.png"
                 "https://cdn.discordapp.com/attachments/927585487332466778/992917007479619584/unknown.png"
                 "https://cdn.discordapp.com/attachments/927585487332466778/964562528896155688/unknown.png"
+                "https://cdn.discordapp.com/attachments/778999058965987378/1015775832859476008/Screenshot_2022-09-04_at_02-36-39_UNO_Online_-_UNO_Online_CrazyGames.png"
+                "https://cdn.discordapp.com/attachments/778999058965987378/1015775833157275688/Screenshot_2022-09-04_at_02-41-12_UNO_Online_-_UNO_Online_CrazyGames.png"
+                "https://cdn.discordapp.com/attachments/778999058965987378/1015775833434108025/Screenshot_2022-09-04_at_02-45-13_UNO_Online_-_UNO_Online_CrazyGames.png"
+                "https://cdn.discordapp.com/attachments/778999058965987378/1015775833681559562/Screenshot_2022-09-04_at_02-56-04_UNO_Online_-_UNO_Online_CrazyGames.png"
+                "https://cdn.discordapp.com/attachments/778999058965987378/1015775833929044068/Screenshot_2022-09-04_at_03-01-52_UNO_Online_-_UNO_Online_CrazyGames.png"
+                "https://cdn.discordapp.com/attachments/778999058965987378/1015775834193272915/Screenshot_2022-09-04_at_03-06-12_UNO_Online_-_UNO_Online_CrazyGames.png"
+                "https://cdn.discordapp.com/attachments/778999058965987378/1015775834805637190/Screenshot_2022-09-04_at_03-08-06_UNO_Online_-_UNO_Online_CrazyGames.png"
+                "https://cdn.discordapp.com/attachments/778999058965987378/1015775835040522240/767.PNG"
+                "https://cdn.discordapp.com/attachments/778999058965987378/1015775835275411556/23546.PNG"
             |]
             |> createCommandWithRandomImages2
                 (CommandId.tryDeserialize "d03cde9a-6cde-4c12-8ba1-8d0ecbeceda9" |> Result.get)
@@ -609,6 +631,17 @@ let commands =
                 "https://cdn.discordapp.com/attachments/927554008263032836/1047934663160770590/unknown.png"
                 "https://cdn.discordapp.com/attachments/927554008263032836/1047934757637472338/unknown.png"
                 "https://cdn.discordapp.com/attachments/859253126878724126/1047944938102460416/unknown.png"
+                "https://cdn.discordapp.com/attachments/778999058965987378/1021477678378909726/Screenshot_2022-09-19_at_20-03-54_UNO_Online_-_UNO_Online_CrazyGames.png"
+                "https://cdn.discordapp.com/attachments/778999058965987378/1021477678743830569/Screenshot_2022-09-19_at_20-05-55_UNO_Online_-_UNO_Online_CrazyGames.png"
+                "https://cdn.discordapp.com/attachments/778999058965987378/1021477679209402479/Screenshot_2022-09-19_at_20-07-37_UNO_Online_-_UNO_Online_CrazyGames.png"
+                "https://cdn.discordapp.com/attachments/778999058965987378/1021477679641395383/Screenshot_2022-09-19_at_20-19-52_UNO_Online_-_UNO_Online_CrazyGames.png"
+                "https://cdn.discordapp.com/attachments/778999058965987378/1021477680023097435/Screenshot_2022-09-19_at_20-21-56_UNO_Online_-_UNO_Online_CrazyGames.png"
+                "https://cdn.discordapp.com/attachments/778999058965987378/1021477680438313000/Screenshot_2022-09-19_at_20-24-21_UNO_Online_-_UNO_Online_CrazyGames.png"
+                "https://cdn.discordapp.com/attachments/778999058965987378/1021477680887111780/Screenshot_2022-09-19_at_20-31-31_UNO_Online_-_UNO_Online_CrazyGames.png"
+                "https://cdn.discordapp.com/attachments/778999058965987378/1021477681293955133/Screenshot_2022-09-19_at_20-33-58_UNO_Online_-_UNO_Online_CrazyGames.png"
+                "https://cdn.discordapp.com/attachments/778999058965987378/1021477681696620585/Screenshot_2022-09-19_at_20-35-04_UNO_Online_-_UNO_Online_CrazyGames.png"
+                "https://cdn.discordapp.com/attachments/778999058965987378/1021477682061512874/Screenshot_2022-09-19_at_20-37-58_UNO_Online_-_UNO_Online_CrazyGames.png"
+                "https://cdn.discordapp.com/attachments/778999058965987378/1021477725170581524/Screenshot_2022-09-19_at_20-44-50_UNO_Online_-_UNO_Online_CrazyGames.png"
             |]
             |> createCommandWithRandomImages2
                 (CommandId.tryDeserialize "96351f4a-7afc-4d51-a982-64a1b370b688" |> Result.get)
@@ -640,6 +673,8 @@ let commands =
         yield
             [|
                 "https://media.tenor.com/yuCDac1XJIkAAAAd/oreo-smile.gif"
+                "https://cdn.discordapp.com/attachments/876706882423762994/1034920477178724412/IMG_20221024_193031_1.png"
+                "https://media.tenor.com/tInHoW8o9fkAAAAC/gamercat-cookies.gif"
             |]
             |> createCommandWithRandomImages2
                 (CommandId.tryDeserialize "6328776b-dd92-4689-87cc-d9135941c004" |> Result.get)
@@ -666,6 +701,97 @@ let commands =
                 "Не надо на меня бурчать, я и так стараюсь, как могу! 🙀"
                 false
                 "<@authorMention> бурчит на <@targetMention>:"
+                true
+
+        yield
+            [|
+                "https://media.tenor.com/Bev4TG664HQAAAAC/%D0%B1%D0%B5%D0%B6%D0%B8%D0%BC.gif"
+                "https://media.tenor.com/nmY9uVcG-vkAAAAC/very-scary-movie2-priest.gif"
+            |]
+            |> createCommandWithRandomImages2
+                (CommandId.tryDeserialize "5b99c051-01c1-44f4-a531-55e2e927dec6" |> Result.get)
+                [| "бежать"; "сбежать"; "сбегает" |]
+                "<@authorMention> сбегает:"
+                true
+                "От меня не сбежать <:Demon_Kingsmile:877678191693692969>"
+                false
+                "<@authorMention> сбегает от <@targetMention>:"
+                true
+
+        yield
+            [|
+                "https://media.tenor.com/2UPCE4EQRi8AAAAC/please-begging.gif"
+            |]
+            |> createCommandWithRandomImages2
+                (CommandId.tryDeserialize "c974e9ee-3c56-4869-adcb-141d0388e3db" |> Result.get)
+                [| "умолять"; "просить"; "умоляет" |]
+                "<@authorMention> умоляет:"
+                true
+                "Тщетны твои мольбы <:Demon_Kingsmile:877678191693692969>"
+                false
+                "<@authorMention> умоляет <@targetMention>:"
+                true
+
+        yield
+            [|
+                "https://media.tenor.com/l5sIE_3H3EEAAAAd/cats-fighting-fighting-cats.gif"
+                "https://media.tenor.com/2NUo71q5wbMAAAAC/cats-fight.gif"
+                "https://media.tenor.com/saVFWCC23KoAAAAd/cat-fight-cats-fighting.gif"
+                "https://media.tenor.com/l5sIE_3H3EEAAAAd/cats-fighting-fighting-cats.gif"
+                "https://media.tenor.com/Y2JNQLkzz8sAAAAd/cats-funny.gif"
+            |]
+            |> createCommandWithRandomImages2
+                (CommandId.tryDeserialize "e5141bbc-be19-4f91-8228-e71a4d13a89b" |> Result.get)
+                [| "напасть"; "атаковать" |]
+                "<@authorMention> няпадает:"
+                true
+                "Не советую на меня нападать <:Demon_Kingsmile:877678191693692969>"
+                false
+                "<@authorMention> няпадает на <@targetMention>:"
+                true
+
+        yield
+            [|
+                "https://media.tenor.com/igJNrzoEWiwAAAAC/faint-drama.gif"
+            |]
+            |> createCommandWithRandomImages2
+                (CommandId.tryDeserialize "d158506e-27a7-41f1-bca2-8fb9d6a9dbdb" |> Result.get)
+                [| "драма" |]
+                "<@authorMention> изображает королеву драмы:"
+                true
+                "Тщетны твои <:Demon_Kingsmile:877678191693692969>"
+                false
+                "<@authorMention> няпадает на <@targetMention>:"
+                true
+
+        yield
+            [|
+                "https://cdn.discordapp.com/attachments/1020769499370246198/1039880982448324658/4be76d1411ad3f91.png"
+            |]
+            |> createCommandWithRandomImages2
+                (CommandId.tryDeserialize "908412ce-e724-44b0-a056-7ad192026aa3" |> Result.get)
+                [| "ловелас"; "сердцеед" |]
+                "<@authorMention> изображает из себя ловеласа:"
+                true
+                "Тщетны твои <:Demon_Kingsmile:877678191693692969>"
+                false
+                "<@authorMention> соблазняет <@targetMention>:"
+                true
+
+        yield
+            [|
+                "https://media.tenor.com/TcYTfeJkbmcAAAAC/%D0%BA%D0%BE%D1%82.gif"
+                "https://media.tenor.com/b3QpV-rd7C4AAAAC/kitty-little-paws.gif"
+                "https://media.tenor.com/0YOeQFrpIuUAAAAC/cat-paws-paw.gif"
+            |]
+            |> createCommandWithRandomImages2
+                (CommandId.tryDeserialize "de12b01f-2ec1-4b80-9264-1e76507ebf1e" |> Result.get)
+                [| "лапки" |]
+                "У <@authorMention> лапки:"
+                true
+                "Меня и так лапки сотворили."
+                false
+                "<@authorMention> показывает свои лапки <@targetMention>:"
                 true
     |]
 
