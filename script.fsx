@@ -172,6 +172,7 @@ let commands =
                 "https://media.tenor.com/MEGTI1brCBoAAAAC/aww-so-in-love.gif"
                 "https://media.tenor.com/5w5YGzdrlgoAAAAC/smile-dreamy.gif"
                 "https://media.tenor.com/VaNHuhM2hxcAAAAC/yes-patrick.gif"
+                "https://cdn.discordapp.com/attachments/876706882423762994/895897487422914640/qdNVIlPoG8o.jpg"
             |]
             |> createCommandWithRandomImages
                 (CommandId.tryDeserialize "a2df140b-efe1-4ff7-8468-d1e26f120d9a" |> Result.get)
@@ -194,10 +195,11 @@ let commands =
         yield
             [|
                 "https://cdn.discordapp.com/attachments/864883475386990664/895218342141509632/Screenshot_20181219-151451_1.jpg"
+                "https://c.tenor.com/9OGqk-WVlNEAAAAC/cats-chase.gif"
             |]
             |> createCommandWithRandomImages
                 (CommandId.tryDeserialize "2c126e06-1294-479a-9ee4-b420195debad" |> Result.get)
-                [| "словить"; "catch" |]
+                [| "словить"; "catch"; "споймать" |]
                 "Самого нельзя ловить!"
                 "Меня нельзя ловить! Я этого не вынесу :scream_cat:"
                 "<@authorMention> ловит <@targetMention>"
@@ -233,6 +235,7 @@ let commands =
                 "https://media0.giphy.com/media/XtuYDes6uyL4Y/giphy.gif"
                 "https://media.tenor.com/p9AJkXcmJucAAAAC/nom-tik-tok.gif"
                 "https://cdn.discordapp.com/attachments/876498372939382784/948864222912204800/03e6f05d01f87f934a5c2b547bf77e61.jpg"
+                "https://media.tenor.com/snjr2hMxcs8AAAAd/funny-animals-kitty.gif"
             |]
             |> createCommandWithRandomImages
                 (CommandId.tryDeserialize "a453fb4d-c9f8-46b5-802b-4534a665a2c3" |> Result.get)
@@ -386,6 +389,7 @@ let commands =
                 "https://cdn.discordapp.com/attachments/821693841718771724/1048505953131171911/B_-u7MnJO_G12amayezRHnfpc6JIAqOavzk1gayFHrwmw7X7Q3OaMNbq6tkK2IE_4GXh0zkrBD1Bj_EyzcCE7_R4.jpg"
                 "https://media.tenor.com/igJNrzoEWiwAAAAC/faint-drama.gif"
                 "https://media.tenor.com/BLyoWqxTQ3gAAAAC/darkwing-duck-gosalyn-mallard.gif"
+                "https://cdn.discordapp.com/attachments/912291464074117161/1048897403291455600/6HsY8tDMPhs-removebg-preview.png"
             |]
             |> createCommandWithRandomImages2
                 (CommandId.tryDeserialize "0195eb5a-771c-463b-bc32-afcf2a60d636" |> Result.get)
@@ -739,6 +743,7 @@ let commands =
                 "https://media.tenor.com/saVFWCC23KoAAAAd/cat-fight-cats-fighting.gif"
                 "https://media.tenor.com/l5sIE_3H3EEAAAAd/cats-fighting-fighting-cats.gif"
                 "https://media.tenor.com/Y2JNQLkzz8sAAAAd/cats-funny.gif"
+                "https://media.tenor.com/LGHg3qvEKJgAAAAd/funny-animals-animals.gif"
             |]
             |> createCommandWithRandomImages2
                 (CommandId.tryDeserialize "e5141bbc-be19-4f91-8228-e71a4d13a89b" |> Result.get)
@@ -782,7 +787,7 @@ let commands =
             [|
                 "https://media.tenor.com/TcYTfeJkbmcAAAAC/%D0%BA%D0%BE%D1%82.gif"
                 "https://media.tenor.com/b3QpV-rd7C4AAAAC/kitty-little-paws.gif"
-                "https://media.tenor.com/0YOeQFrpIuUAAAAC/cat-paws-paw.gif"
+                "https://cdn.discordapp.com/attachments/927554008263032836/1049192535500800000/bloggif_6123f977cfede-2-1-1-1-1.gif"
             |]
             |> createCommandWithRandomImages2
                 (CommandId.tryDeserialize "de12b01f-2ec1-4b80-9264-1e76507ebf1e" |> Result.get)
@@ -792,6 +797,35 @@ let commands =
                 "Меня и так лапки сотворили."
                 false
                 "<@authorMention> показывает свои лапки <@targetMention>:"
+                true
+
+        yield
+            [|
+                "https://c.tenor.com/zKH6YcN6-rsAAAAd/kingking.gif"
+            |]
+            |> createCommandWithRandomImages2
+                (CommandId.tryDeserialize "36fb4d93-7bcc-4f5f-926c-5e1812bf8d5e" |> Result.get)
+                [| "выглянуть"; "выглядывает"; "выглядывание" |]
+                "У <@authorMention> выглядывает:"
+                true
+                "Хватит выглядывать — пора действовать!"
+                false
+                "<@authorMention> подглядывает за <@targetMention>:"
+                true
+
+        yield
+            [|
+                "https://cdn.discordapp.com/attachments/944823021548503050/1049285511388336138/1667032276165432283.gif"
+                "https://media.tenor.com/6gp6u2j7huYAAAAC/cat-cute.gif"
+            |]
+            |> createCommandWithRandomImages2
+                (CommandId.tryDeserialize "3f8071f9-1ce7-4814-987c-89ebd8cf6128" |> Result.get)
+                [| "глазки"; "строитьГлазки" |]
+                "<@authorMention> строит глазки:"
+                true
+                "Не надо мне тут строить глазки."
+                false
+                "<@authorMention> строит глазки <@targetMention>:"
                 true
     |]
 
