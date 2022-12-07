@@ -587,9 +587,9 @@ NUGET
       YamlDotNet (>= 8.1.2)
 GIT
   remote: https://github.com/gretmn102/DiscordCommandBot.git
-     (e82fabbdaf5cc8d32973e78261bb7aaf686355b1)
+     (bff8a65ebb58f02871a0b3eefd8d0176af31fb01)
       build: build.cmd
       os: windows
-     (e82fabbdaf5cc8d32973e78261bb7aaf686355b1)
+     (bff8a65ebb58f02871a0b3eefd8d0176af31fb01)
       build: build.sh
       os: mono

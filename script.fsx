@@ -8,41 +8,84 @@ open CustomCommand.Model
 let genId () =
     System.Guid.NewGuid() |> sprintf "(CommandId.tryDeserialize \"%A\" |> Result.get)" |> Clipboard.setText
 
+let createCommandWithRandomImages3 id names onSelfDescription onSelfImgs onBotDescription onBotImgs onOtherDescription onOtherImgs =
+    let create description images =
+        if Array.isEmpty images then
+            [|
+                {
+                    Content = None
+                    Embed =
+                        {
+                            Description = Some description
+                            ImageUrl = None
+                        }
+                }
+            |]
+        else
+            images
+            |> Array.map (fun imageUrl ->
+                {
+                    Content = None
+                    Embed =
+                        {
+                            Description = Some description
+                            ImageUrl = Some imageUrl
+                        }
+                }
+            )
+
+    Command.create
+        id
+        {
+            Names = names
+            OnSelf =
+                create onSelfDescription onSelfImgs
+
+            OnBot =
+                create onBotDescription onBotImgs
+
+            OnOther =
+                create onOtherDescription onOtherImgs
+        }
+
 let createCommandWithRandomImages2 id names onSelfDescription isOnSelfImg onBotDescription isOnBotImg onTargetDescription isOnTargetImg imageUrls =
     Command.create
         id
         {
             Names = names
-            RandomEffects =
+            OnSelf =
                 imageUrls
                 |> Array.map (fun imageUrl ->
                     {
-                        OnSelf =
+                        Content = None
+                        Embed =
                             {
-                                Content = None
-                                Embed =
-                                    {
-                                        Description = Some onSelfDescription
-                                        ImageUrl = if isOnSelfImg then Some imageUrl else None
-                                    }
+                                Description = Some onSelfDescription
+                                ImageUrl = if isOnSelfImg then Some imageUrl else None
                             }
-                        OnBot =
+                    }
+                )
+            OnBot =
+                imageUrls
+                |> Array.map (fun imageUrl ->
+                    {
+                        Content = None
+                        Embed =
                             {
-                                Content = None
-                                Embed =
-                                    {
-                                        Description = Some onBotDescription
-                                        ImageUrl = if isOnBotImg then Some imageUrl else None
-                                    }
+                                Description = Some onBotDescription
+                                ImageUrl = if isOnBotImg then Some imageUrl else None
                             }
-                        OnOther =
+                    }
+                )
+            OnOther =
+                imageUrls
+                |> Array.map (fun imageUrl ->
+                    {
+                        Content = None
+                        Embed =
                             {
-                                Content = None
-                                Embed =
-                                    {
-                                        Description = Some onTargetDescription
-                                        ImageUrl = if isOnTargetImg then Some imageUrl else None
-                                    }
+                                Description = Some onTargetDescription
+                                ImageUrl = if isOnTargetImg then Some imageUrl else None
                             }
                     }
                 )
@@ -65,42 +108,45 @@ let createCommandWithRandomDescriptions id names onSelfDescription onBotDescript
         id
         {
             Names = names
-            RandomEffects =
+            OnSelf =
                 descriptions
                 |> Array.map (fun description ->
                     {
-                        OnSelf =
+                        Content = None
+                        Embed =
                             {
-                                Content = None
-                                Embed =
-                                    {
-                                        Description = Some (onSelfDescription description)
-                                        ImageUrl = Some imageUrl
-                                    }
+                                Description = Some (onSelfDescription description)
+                                ImageUrl = Some imageUrl
                             }
-                        OnBot =
+                    }
+                )
+            OnBot =
+                descriptions
+                |> Array.map (fun description ->
+                    {
+                        Content = None
+                        Embed =
                             {
-                                Content = None
-                                Embed =
-                                    {
-                                        Description = Some (onBotDescription description)
-                                        ImageUrl = None
-                                    }
+                                Description = Some (onBotDescription description)
+                                ImageUrl = None
                             }
-                        OnOther =
+                    }
+                )
+            OnOther =
+                descriptions
+                |> Array.map (fun description ->
+                    {
+                        Content = None
+                        Embed =
                             {
-                                Content = None
-                                Embed =
-                                    {
-                                        Description = Some (onTargetDescription description)
-                                        ImageUrl = Some imageUrl
-                                    }
+                                Description = Some (onTargetDescription description)
+                                ImageUrl = Some imageUrl
                             }
                     }
                 )
         }
 
-let commands =
+let commands: Command [] =
     [|
         yield
             [|
@@ -504,27 +550,27 @@ let commands =
                 true
 
         yield
-            [|
-                "https://media.tenor.com/B90mA02D_RkAAAAd/face-massage-kitten.gif"
-                "https://media.tenor.com/K5SZOyxVUokAAAAd/cute-cat.gif"
-                "https://media.tenor.com/mUUp5aMUIxkAAAAC/disney-cute.gif" // TODO: это надо на себя
-                "https://media.tenor.com/oVPr0f0MtmkAAAAd/cat-face-massage.gif"
-                "https://media.tenor.com/Tx1SfMNQtdAAAAAC/cute-kitten.gif"
-                "https://media.tenor.com/w-IKBrrstF4AAAAC/pinching-cheeks-aww.gif"
-                "https://media.tenor.com/iiPcPAuOjaMAAAAd/squishy-kitty-cat.gif"
-                "https://media.tenor.com/QncOj9EgFQEAAAAC/cheeks-cute.gif" // TODO: на себя
-                "https://media.tenor.com/UX0_hloOPj4AAAAC/pull-shibainu.gif"
-                "https://media.tenor.com/EZelAU6S6McAAAAd/mochicat-cute.gif"
-            |]
-            |> createCommandWithRandomImages2
+            createCommandWithRandomImages3
                 (CommandId.tryDeserialize "2f1b48cd-bc04-4ed5-944b-6cf3fa0d79f3" |> Result.get)
                 [| "щечки" |]
                 "<@authorMention> разминает себе щечки:"
-                true
+                [|
+                    "https://media.tenor.com/mUUp5aMUIxkAAAAC/disney-cute.gif"
+                    "https://media.tenor.com/QncOj9EgFQEAAAAC/cheeks-cute.gif"
+                |]
                 "Не надо мне щечки мять, бу! 🙀"
-                false
+                [||]
                 "<@authorMention> разминает щечки <@targetMention>:"
-                true
+                [|
+                    "https://media.tenor.com/B90mA02D_RkAAAAd/face-massage-kitten.gif"
+                    "https://media.tenor.com/K5SZOyxVUokAAAAd/cute-cat.gif"
+                    "https://media.tenor.com/oVPr0f0MtmkAAAAd/cat-face-massage.gif"
+                    "https://media.tenor.com/Tx1SfMNQtdAAAAAC/cute-kitten.gif"
+                    "https://media.tenor.com/w-IKBrrstF4AAAAC/pinching-cheeks-aww.gif"
+                    "https://media.tenor.com/iiPcPAuOjaMAAAAd/squishy-kitty-cat.gif"
+                    "https://media.tenor.com/UX0_hloOPj4AAAAC/pull-shibainu.gif"
+                    "https://media.tenor.com/EZelAU6S6McAAAAd/mochicat-cute.gif"
+                |]
 
         yield
             [|
