@@ -554,7 +554,7 @@ let commands: Command [] =
         yield
             createCommandWithRandomImages3
                 (CommandId.tryDeserialize "2f1b48cd-bc04-4ed5-944b-6cf3fa0d79f3" |> Result.get)
-                [| "щечки" |]
+                [| "щечки"; "щёчки" |]
                 "<@authorMention> разминает себе щечки:"
                 [|
                     "https://media.tenor.com/mUUp5aMUIxkAAAAC/disney-cute.gif"
