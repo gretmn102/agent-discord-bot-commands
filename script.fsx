@@ -901,6 +901,29 @@ let commands: Command [] =
                     "https://media.tenor.com/xZL-YpO6wFcAAAAd/cat-kitty.gif"
                     "https://media.tenor.com/IJKuYz9RPYQAAAAd/cat-%D0%BA%D0%BE%D1%82.gif"
                 |]
+
+        yield
+            createCommandWithRandomImages3
+                (CommandId.tryDeserialize "e0437fd8-455a-4345-86fe-2509d8b495fd" |> Result.get)
+                [| "жужу"; "жужжать"; "жужжит"; "buzz" |]
+                "<@authorMention> жужжит:"
+                [|
+                    "https://media.tenor.com/TwqntufBQVgAAAAd/cat-bee.gif"
+                    "https://cdn.discordapp.com/attachments/1050675277354766356/1050712130028064808/iu.png"
+                    "https://cdn.discordapp.com/attachments/1050675277354766356/1050712195069116466/iu.png"
+                    "https://cdn.discordapp.com/attachments/1050675277354766356/1050712314061541397/iu.png"
+                    "https://cdn.discordapp.com/attachments/1050675277354766356/1050712846159327262/jadejerilyn.png"
+                    "https://cdn.discordapp.com/attachments/1050675277354766356/1050715734248005683/iu.png"
+                |]
+                "<@authorMention>, не жужжи на меня, а то бип-буп сделаю <:Demon_Kingsmile:877678191693692969>"
+                [||]
+                "<@authorMention> жужжит на <@targetMention>:"
+                [|
+                    "https://media.tenor.com/b922yKwSlO8AAAAC/bee-cat.gif"
+                    "https://media.tenor.com/KUN8-p-Qrf4AAAAd/bee.gif"
+                    "https://cdn.discordapp.com/attachments/1050675277354766356/1050712378511212655/iu.png"
+                    "https://cdn.discordapp.com/attachments/1050675277354766356/1050715734248005683/iu.png"
+                |]
     |]
 
 let content = commands |> CommandsArray.serialize
