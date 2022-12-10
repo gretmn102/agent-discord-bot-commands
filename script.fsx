@@ -498,6 +498,7 @@ let commands: Command [] =
                 "https://media.tenor.com/P2PITomgV4YAAAAC/cats.gif"
                 "https://media.tenor.com/63hKT9buoDIAAAAC/cute-kitty.gif"
                 "https://media.tenor.com/81JkOtzZjQsAAAAC/duck-foot-rub.gif"
+                "https://media.tenor.com/jDWmx28SMacAAAAC/kittens-massaging.gif"
             |]
             |> createCommandWithRandomImages2
                 (CommandId.tryDeserialize "fb3e7fe1-be43-4657-a504-11e8ca608c6b" |> Result.get)
@@ -837,6 +838,7 @@ let commands: Command [] =
                 "https://media.tenor.com/TcYTfeJkbmcAAAAC/%D0%BA%D0%BE%D1%82.gif"
                 "https://media.tenor.com/b3QpV-rd7C4AAAAC/kitty-little-paws.gif"
                 "https://cdn.discordapp.com/attachments/927554008263032836/1049192535500800000/bloggif_6123f977cfede-2-1-1-1-1.gif"
+                "https://media.tenor.com/KZC1s7f-RZ4AAAAC/cute-kitten.gif"
             |]
             |> createCommandWithRandomImages2
                 (CommandId.tryDeserialize "de12b01f-2ec1-4b80-9264-1e76507ebf1e" |> Result.get)
@@ -923,6 +925,24 @@ let commands: Command [] =
                     "https://media.tenor.com/KUN8-p-Qrf4AAAAd/bee.gif"
                     "https://cdn.discordapp.com/attachments/1050675277354766356/1050712378511212655/iu.png"
                     "https://cdn.discordapp.com/attachments/1050675277354766356/1050715734248005683/iu.png"
+                |]
+
+        yield
+            createCommandWithRandomImages3
+                (CommandId.tryDeserialize "8da29f55-fb38-4de9-b40b-caa9a0cba489" |> Result.get)
+                [| "ластиться"; "ластится"; "тереться" |]
+                "<@authorMention> ластится:"
+                [|
+                    "https://media.tenor.com/QYQ6fTqCdrEAAAAd/manul-pallas-cat.gif"
+                |]
+                "<@authorMention>, на меня это не работает <:Demon_Kingsmile:877678191693692969>"
+                [||]
+                "<@authorMention> ластится к <@targetMention>:"
+                [|
+                    "https://media.tenor.com/GKzrBpqjBzMAAAAd/cute-cat.gif"
+                    "https://media.tenor.com/oepLIJup6kIAAAAd/wet-hair.gif"
+                    "https://media.tenor.com/UW1xc68-KXkAAAAd/funny-animals-cats.gif"
+                    "https://media.tenor.com/twkOV4hc7JUAAAAd/kitty-cat.gif"
                 |]
     |]
 
