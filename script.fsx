@@ -816,7 +816,7 @@ let commands: Command [] =
                 true
                 "Тщетны твои <:Demon_Kingsmile:877678191693692969>"
                 false
-                "<@authorMention> няпадает на <@targetMention>:"
+                "<@authorMention> изображает королеву драмы перед <@targetMention>:"
                 true
 
         yield
@@ -916,6 +916,7 @@ let commands: Command [] =
                     "https://cdn.discordapp.com/attachments/1050675277354766356/1050712314061541397/iu.png"
                     "https://cdn.discordapp.com/attachments/1050675277354766356/1050712846159327262/jadejerilyn.png"
                     "https://cdn.discordapp.com/attachments/1050675277354766356/1050715734248005683/iu.png"
+                    "https://cdn.discordapp.com/attachments/1011244894020456488/1052238388079632414/b337286ba3aaf5cc.png"
                 |]
                 "<@authorMention>, не жужжи на меня, а то бип-буп сделаю <:Demon_Kingsmile:877678191693692969>"
                 [||]
@@ -944,6 +945,26 @@ let commands: Command [] =
                     "https://media.tenor.com/UW1xc68-KXkAAAAd/funny-animals-cats.gif"
                     "https://media.tenor.com/twkOV4hc7JUAAAAd/kitty-cat.gif"
                 |]
+
+        let urls =
+            [|
+                "https://media.tenor.com/SFj-19Vp3YkAAAAC/kiss-flying.gif"
+                "https://media.tenor.com/vmrR0VoDVRkAAAAC/blow-kiss-anime-blow-kiss.gif"
+                "https://media.tenor.com/R1y3qRkSRwkAAAAC/anime-girl.gif"
+                "https://media.tenor.com/43qt_qk-LWkAAAAC/cute-anime.gif"
+                "https://media.tenor.com/7s-3eQ3MNtsAAAAC/laughs-kiis.gif"
+            |]
+
+        yield
+            createCommandWithRandomImages3
+                (CommandId.tryDeserialize "4667fdc1-7d6f-4bef-960e-d3521cdae1fe" |> Result.get)
+                [| "воздушныйПоцелуй"; "поцелуй" |]
+                "<@authorMention> посылает воздушный поцелуй:"
+                urls
+                "<@authorMention>, мне роботу, из цифровой плоти и холодных логических цепей, чужда теплота двуногих, но все равно спасибо, бип-буп."
+                [||]
+                "<@authorMention> посылает воздушный поцелуй <@targetMention>:"
+                urls
     |]
 
 let content = commands |> CommandsArray.serialize
