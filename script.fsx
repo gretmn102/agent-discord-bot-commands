@@ -976,6 +976,7 @@ let commands: Command [] =
                 "https://media.tenor.com/tr-LVhGZoGUAAAAd/cat-tree-cat-christmas-tree.gif"
                 "https://media.tenor.com/Z2Z1-qwoZkoAAAAd/cat-xmas.gif"
                 "https://media.tenor.com/fV7M7ji-JbkAAAAd/cat-vs-ornament-cat.gif"
+                "https://media.tenor.com/PVexpkgAwoIAAAAd/cat-christmas-flying-xmas-cat.gif"
             |]
 
         yield
@@ -1004,6 +1005,24 @@ let commands: Command [] =
                 [|
                     "https://media.tenor.com/48IYu9PI9wMAAAAC/man-throw.gif"
                     "https://media.tenor.com/jySu4lBl_loAAAAd/snowman-snowball.gif"
+                |]
+
+        yield
+            createCommandWithRandomImages3
+                (CommandId.tryDeserialize "bee17367-86f6-4a35-a6ff-64d2188f3810" |> Result.get)
+                [| "обнять" |]
+                "<@authorMention> обнимает себя 🤗"
+                [||]
+                "<@authorMention>, я слишком холодный для всего этого, бип-буп."
+                [||]
+                "<@authorMention> обнимает <@targetMention>:"
+                [|
+                    "https://media.tenor.com/KbM-vf5iJ0cAAAAd/cats-hug.gif"
+                    "https://media.tenor.com/IH3q87oSV5EAAAAd/cat-hug.gif"
+                    "https://media.tenor.com/_w6z-q2Z8xEAAAAd/goodnite-moomoo.gif"
+                    "https://media.tenor.com/eAKshP8ZYWAAAAAC/cat-love.gif"
+                    "https://media.tenor.com/kBlRhi7nqYwAAAAd/cat-hugs-alydn.gif"
+                    "https://media.tenor.com/uxo1ef9EdxQAAAAd/cat-cats.gif"
                 |]
     |]
 
