@@ -247,7 +247,7 @@ let commands: Command [] =
             |]
             |> createCommandWithRandomImages
                 (CommandId.tryDeserialize "2c126e06-1294-479a-9ee4-b420195debad" |> Result.get)
-                [| "словить"; "catch"; "споймать" |]
+                [| "словить"; "catch"; "споймать"; "поймать" |]
                 "Самого нельзя ловить!"
                 "Меня нельзя ловить! Я этого не вынесу :scream_cat:"
                 "<@authorMention> ловит <@targetMention>"
