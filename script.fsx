@@ -574,6 +574,7 @@ let commands: Command [] =
                     "https://media.tenor.com/iiPcPAuOjaMAAAAd/squishy-kitty-cat.gif"
                     "https://media.tenor.com/UX0_hloOPj4AAAAC/pull-shibainu.gif"
                     "https://media.tenor.com/EZelAU6S6McAAAAd/mochicat-cute.gif"
+                    "https://media.tenor.com/XuLO9w5VJLUAAAAC/kitten-cute-cat.gif"
                 |]
 
         yield
@@ -1079,6 +1080,27 @@ let commands: Command [] =
                 "<@authorMention>, никакого куся в мою смену <:Demon_Kingsmile:877678191693692969>"
                 [||]
                 "<@authorMention> куськает за щеку <@targetMention>:"
+                gifs
+
+        let gifs =
+            [|
+                "https://media.tenor.com/Lg21skpXtU4AAAAC/cat-meme.gif"
+                "https://media.tenor.com/-WxqpxyUTD4AAAAС/daladada-cat.gif"
+                "https://media.tenor.com/PGnGqfkIuLYAAAAC/cat-head.gif"
+                "https://media.tenor.com/_zVIdn3Ok_cAAAAC/cat-scream.gif"
+                "https://media.tenor.com/t5HqHfs2_sEAAAAC/cat-kitten.gif"
+                "https://media.tenor.com/bQuWIFsZWEgAAAAC/thurston-waffles-meow.gif"
+            |]
+
+        yield
+            createCommandWithRandomImages3
+                (CommandId.tryDeserialize "12d022d6-7e44-429e-8c46-178ea8fa1e27" |> Result.get)
+                [| "орать"; "орет"; "орёт"; "кричит"; "кричать" |]
+                "<@authorMention> кричит:"
+                gifs
+                "<@authorMention>, никакого ора в мою смену! <:Demon_Kingsmile:877678191693692969>"
+                [||]
+                "<@authorMention> кричит на <@targetMention>:"
                 gifs
     |]
 
