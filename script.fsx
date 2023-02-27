@@ -1102,6 +1102,23 @@ let commands: Command [] =
                 [||]
                 "<@authorMention> кричит на <@targetMention>:"
                 gifs
+
+        let gifs =
+            [|
+                "https://cdn.discordapp.com/attachments/1074262266880466965/1074262416944283648/fa5dac8bf1f0a16f9c4330d8dfc64042.gif"
+                "https://cdn.discordapp.com/attachments/1074262266880466965/1074262417254658108/a8c0789126e3711f87842b55024e0419.gif"
+            |]
+
+        yield
+            createCommandWithRandomImages3
+                (CommandId.tryDeserialize "12d022d6-7e44-429e-8c46-178ea8fa1e27" |> Result.get)
+                [| "наказать"; "отшлепать" |]
+                "<@authorMention> шлепать:"
+                gifs
+                "<@authorMention>, никакого шлепа в мою смену! <:Demon_Kingsmile:877678191693692969>"
+                [||]
+                "<@authorMention> шлепает <@targetMention>:"
+                gifs
     |]
 
 let content = commands |> CommandsArray.serialize
