@@ -1164,6 +1164,18 @@ let commands: Command [] =
                 gifs
     |]
 
+let testUniqIds () =
+    commands
+    |> Array.fold
+        (fun ids x ->
+            if Set.contains x.Id ids then
+                failwithf "%A not uniq!" x.Id
+            Set.add x.Id ids
+        )
+        Set.empty
+    |> ignore
+
+testUniqIds ()
 let content = commands |> CommandsArray.serialize
 System.IO.File.WriteAllText("output.json", content)
 printfn "Done!"
