@@ -1111,13 +1111,30 @@ let commands: Command [] =
 
         yield
             createCommandWithRandomImages3
-                (CommandId.tryDeserialize "12d022d6-7e44-429e-8c46-178ea8fa1e27" |> Result.get)
+                (CommandId.tryDeserialize "22481f64-d591-4b3f-8a72-ef7cd3ea01b1" |> Result.get)
                 [| "наказать"; "отшлепать" |]
                 "<@authorMention> шлепать:"
                 gifs
                 "<@authorMention>, никакого шлепа в мою смену! <:Demon_Kingsmile:877678191693692969>"
                 [||]
                 "<@authorMention> шлепает <@targetMention>:"
+                gifs
+
+        let gifs =
+            [|
+                "https://cdn.discordapp.com/attachments/912291464074117161/1079991686194810980/da338988c1bf205da96846aac3adf34c.png"
+                "https://cdn.discordapp.com/attachments/912291464074117161/1079993526336618496/cute_chibi_riding_a_dragon_by_kianoromitria-d8p86nr.png"
+            |]
+
+        yield
+            createCommandWithRandomImages3
+                (CommandId.tryDeserialize "1cddb54b-bb69-468a-a46a-426e41b88908" |> Result.get)
+                [| "луня" |]
+                "— Я — зло!!! — кричит <@authorMention> и изображает Луню."
+                gifs
+                "<@authorMention>, никакого зла в мою смену! <:Demon_Kingsmile:877678191693692969>"
+                [||]
+                "— Я — зло!!! — кричит <@authorMention> и изображает Луню."
                 gifs
     |]
 
