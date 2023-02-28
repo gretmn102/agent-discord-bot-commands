@@ -882,7 +882,7 @@ let commands: Command [] =
 
         yield
             createCommandWithRandomImages3
-                (CommandId.tryDeserialize "3f8071f9-1ce7-4814-987c-89ebd8cf6128" |> Result.get)
+                (CommandId.tryDeserialize "213d850a-c056-494c-ae1f-62458386c830" |> Result.get)
                 [| "спать"; "sleep"; "уложитьСпать" |]
                 "<@authorMention> укладывается спатюнькать:"
                 [|
