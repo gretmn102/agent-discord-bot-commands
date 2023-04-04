@@ -810,6 +810,7 @@ let commands: Command [] =
         yield
             [|
                 "https://media.tenor.com/igJNrzoEWiwAAAAC/faint-drama.gif"
+                "https://media.discordapp.net/attachments/859253126878724126/1090804061676244992/output.gif"
             |]
             |> createCommandWithRandomImages2
                 (CommandId.tryDeserialize "d158506e-27a7-41f1-bca2-8fb9d6a9dbdb" |> Result.get)
@@ -1205,6 +1206,34 @@ let commands: Command [] =
                     "https://media.tenor.com/CgYWLZ8S2d4AAAAC/boomerang-throw.gif"
                     "https://media.tenor.com/images/365754798f6d8ad0f81e49e93d170f1c/tenor.gif"
                     "https://cdn.dribbble.com/users/1161476/screenshots/4906637/untit.gif"
+                |]
+
+        yield
+            createCommandWithRandomImages3
+                (CommandId.tryDeserialize "659fb789-3dc3-42bb-b855-a58665af3580" |> Result.get)
+                [| "поцеловать" |]
+                "<@authorMention>, надо бы указать, кого целуешь <:froggieShock:958004634310574120>"
+                [||]
+                "<@authorMention>, не надо меня целовать, бип-буп! 🙀"
+                [||]
+                "<@authorMention> целует <@targetMention>:"
+                [|
+                    "https://media.tenor.com/3DHc1_2PZ-oAAAAC/kiss.gif" // аниме
+                    "https://media.tenor.com/RQhHyGyFoXIAAAAd/love.gif" // коты
+                    "https://media.tenor.com/4m0Z24gYBg8AAAAC/milk-and-mocha-cute.gif" // mocha
+                    "https://media.tenor.com/QKceeOMr8NUAAAAC/kiss-kisses.gif" // mocha
+                    "https://media.tenor.com/RKts25diH6gAAAAC/mochi-kiss.gif" // mocha
+                    "https://media.tenor.com/PIluhbjJORMAAAAd/kiss-bite.gif" // anime
+                    "https://media.tenor.com/0qBw32t-hdkAAAAC/poggers-anime.gif" // anime
+                    "https://media.tenor.com/fiafXWajQFoAAAAC/kiss-anime.gif" // anime
+                    "https://media.tenor.com/KE3VW3qP4RAAAAAC/kiss.gif" // anime
+                    "https://media.tenor.com/fONsKJlR5aEAAAAC/kiss-love.gif" // anime
+                    "https://media.tenor.com/217aKgnf16sAAAAC/kiss.gif" // mocha
+                    "https://media.tenor.com/1mkcYYknDFYAAAAC/kiss.gif" // real
+                    "https://media.tenor.com/DoHbYaLukKcAAAAC/lyubov-lyublu.gif" // real
+                    "https://media.tenor.com/m6pOa3HDKFQAAAAC/passionate-kiss-kiss.gif" // real
+                    "https://media.tenor.com/fCB3Ifb_e5AAAAAC/kiss-me-cats.gif" // tom and jerry
+                    "https://media.tenor.com/ky0z0xDC1HMAAAAC/kiss-passionate.gif" // bear and rabbit
                 |]
     |]
 
