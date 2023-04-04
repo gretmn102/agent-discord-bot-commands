@@ -795,6 +795,7 @@ let commands: Command [] =
                 "https://media.tenor.com/l5sIE_3H3EEAAAAd/cats-fighting-fighting-cats.gif"
                 "https://media.tenor.com/Y2JNQLkzz8sAAAAd/cats-funny.gif"
                 "https://media.tenor.com/LGHg3qvEKJgAAAAd/funny-animals-animals.gif"
+                "https://media.tenor.com/TPDruIOzoEkAAAAC/kitten-smol.gif"
             |]
             |> createCommandWithRandomImages2
                 (CommandId.tryDeserialize "e5141bbc-be19-4f91-8228-e71a4d13a89b" |> Result.get)
@@ -869,6 +870,7 @@ let commands: Command [] =
             [|
                 "https://cdn.discordapp.com/attachments/944823021548503050/1049285511388336138/1667032276165432283.gif"
                 "https://media.tenor.com/6gp6u2j7huYAAAAC/cat-cute.gif"
+                "https://media.tenor.com/xpN-1asA5CwAAAAC/puppy-eyes-pet-lover.gif"
             |]
             |> createCommandWithRandomImages2
                 (CommandId.tryDeserialize "3f8071f9-1ce7-4814-987c-89ebd8cf6128" |> Result.get)
@@ -1161,6 +1163,30 @@ let commands: Command [] =
                 "<@authorMention>, никакого бунда в мою смену! <:Demon_Kingsmile:877678191693692969>"
                 [||]
                 "<@authorMention> бундует против <@targetMention>:"
+                gifs
+
+        let gifs =
+            [|
+                "https://media.tenor.com/WfjEGbjVRtIAAAAC/mochi-mochi-peach-cat-cute.gif"
+                "https://cdn.discordapp.com/attachments/1090297880981549136/1090298329482670090/image1.gif"
+                "https://cdn.discordapp.com/attachments/1090297880981549136/1090298329851760700/image2.gif"
+                "https://cdn.discordapp.com/attachments/1090297880981549136/1090298330384453662/image3.gif"
+                "https://cdn.discordapp.com/attachments/1090297880981549136/1090298330753536010/image4.gif"
+                "https://cdn.discordapp.com/attachments/1090297880981549136/1090298524664594543/image0.gif"
+                "https://media.tenor.com/WvkIVYcwGfEAAAAd/cat-sleeping.gif"
+                "https://media.tenor.com/y8NOCYSyd-AAAAAd/cat-petting-cat.gif"
+                "https://vgif.ru/gifs/166/vgif-ru-39489.gif"
+            |]
+
+        yield
+            createCommandWithRandomImages3
+                (CommandId.tryDeserialize "656ca5c8-2d60-460b-bb1d-7e235d62607f" |> Result.get)
+                [| "гладит"; "гладить"; "погладить" |]
+                "<@authorMention> гладит:"
+                gifs
+                "<@authorMention>, не надо меня гладить, бип-буп! <:kittyResentment:976904434401558539>"
+                [||]
+                "<@authorMention> гладит <@targetMention>:"
                 gifs
     |]
 
