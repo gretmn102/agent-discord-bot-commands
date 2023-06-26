@@ -1311,6 +1311,24 @@ let commands: Command [] =
                 [||]
                 "<@authorMention> изображает Виолку <@targetMention>:"
                 gifs
+
+        let gifs =
+            [|
+                "https://media.tenor.com/aNQO4rue0dUAAAAd/flowers-good.gif"
+                "https://media.tenor.com/ZLJtOJ55pFcAAAAd/morning-sunshine.gif"
+                "https://media.tenor.com/DA27MkM7jBAAAAAC/bloomfleur-roses-roses.gif"
+            |]
+
+        yield
+            createCommandWithRandomImages3
+                (CommandId.tryDeserialize "b3ff9bb9-1a2e-4696-9833-2f49d06fb60c" |> Result.get)
+                [| "цветы" |]
+                "Цветов нет <:catPleased:1041855910626213949>"
+                [||]
+                "<:catPleased:1041855910626213949>"
+                [||]
+                "<@authorMention> дарит цветы <@targetMention>:"
+                gifs
     |]
 
 let testUniqIds () =
