@@ -1210,6 +1210,7 @@ let commands: Command [] =
                 "https://media.tenor.com/p4jBKqXWHnoAAAAd/rally-protest.gif"
                 "https://media.tenor.com/tYqlJaB8AFMAAAAC/despicable-me3-despicable-me3gi-fs.gif"
                 "https://cdn.discordapp.com/attachments/927554008263032836/1080060542938517564/16476876.jpg"
+                "https://cdn.discordapp.com/attachments/927554008263032836/1150762043314548776/Protest.jpg"
             |]
 
         yield
