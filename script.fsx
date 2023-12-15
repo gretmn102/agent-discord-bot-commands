@@ -1465,6 +1465,24 @@ let commands: Command [] =
                     "https://media.tenor.com/djQSgoOBJY0AAAAC/%D0%BA%D0%BE%D1%84%D0%B5%D0%B9%D0%BA%D1%83-%D0%BA%D0%BE%D1%84%D0%B5.gif"
                     "https://cdn.discordapp.com/attachments/912291464074117161/919132969548001340/M1o6QT6J7oQ.png"
                 |]
+
+        let gifs =
+            [|
+                "https://cdn.discordapp.com/attachments/946817848397934643/1185166928310964244/poke-stop.gif"
+                "https://cdn.discordapp.com/attachments/946817848397934643/1185166928747167764/tabatinga.gif"
+                "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNXNwamhsMmlkeWU4Y3duaGtqNXcwcTl2ZXA4M2F4cGUzOXZxaXh0MyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/XSgTZVb2evZYJe3oyC/giphy.gif"
+                "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExOHF1ZHM2bHQ4cnFtYjNuMHR3ZXU3em9naGQ2bG83YjdvYTJmamEyNCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3ohfFH3gJpepwS5DEY/giphy.gif"
+            |]
+        yield
+            createCommandWithRandomImages3
+                (CommandId.tryDeserialize "7b2a48cd-558a-4252-9243-ce0e05484897" |> Result.get)
+                [| "тык" |]
+                "<@authorMention>, тыкает:"
+                gifs
+                "<@authorMention>, не надо меня тыкать 🙀"
+                [||]
+                "<@authorMention> тыкает <@targetMention>:"
+                gifs
     |]
 
 let testUniqIds () =
