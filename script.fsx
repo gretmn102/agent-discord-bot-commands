@@ -778,7 +778,7 @@ let commands: Command [] =
             |]
             |> createCommandWithRandomImages2
                 (CommandId.tryDeserialize "08c84eb2-d430-44d3-8618-698a1adf90b5" |> Result.get)
-                [| "линочка" |]
+                [| "линочка"; "лина" |]
                 "<@authorMention> изображает Линочку:"
                 true
                 "Не надо на меня изображать Линочку! 🙀"
