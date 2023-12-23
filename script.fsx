@@ -1064,7 +1064,7 @@ let commands: Command [] =
                 |]
                 "<@authorMention>, это кто там снежком бросается, бип-буп? <:Demon_Kingsmile:877678191693692969>"
                 [||]
-                "<@authorMention> бросает снижок в <@targetMention>:"
+                "<@authorMention> бросает снежок в <@targetMention>:"
                 [|
                     "https://media.tenor.com/48IYu9PI9wMAAAAC/man-throw.gif"
                     "https://media.tenor.com/jySu4lBl_loAAAAd/snowman-snowball.gif"
