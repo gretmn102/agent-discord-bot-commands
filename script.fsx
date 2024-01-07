@@ -1,5 +1,5 @@
 #load @".paket\load\netcoreapp3.1\main.group.fsx"
-#r @"paket-files\github.com\gretmn102\DiscordCommandBot\deploy\MainProj.dll"
+#r @"paket-files\github.com\gretmn102\DiscordCommandBot\deploy\agent-discord-bot.dll"
 
 open FsharpMyExtension
 open FsharpMyExtension.ResultExt
@@ -12,26 +12,30 @@ let createCommandWithRandomImages3 id names onSelfDescription onSelfImgs onBotDe
     let create description images =
         if Array.isEmpty images then
             [|
-                {
-                    Content = None
-                    Embed =
-                        {
-                            Description = Some description
-                            ImageUrl = None
-                        }
-                }
+                Reaction.create
+                    1
+                    {
+                        Content = None
+                        Embed =
+                            {
+                                Description = Some description
+                                ImageUrl = None
+                            }
+                    }
             |]
         else
             images
             |> Array.map (fun imageUrl ->
-                {
-                    Content = None
-                    Embed =
-                        {
-                            Description = Some description
-                            ImageUrl = Some imageUrl
-                        }
-                }
+                Reaction.create
+                    1
+                    {
+                        Content = None
+                        Embed =
+                            {
+                                Description = Some description
+                                ImageUrl = Some imageUrl
+                            }
+                    }
             )
 
     Command.create
@@ -46,6 +50,9 @@ let createCommandWithRandomImages3 id names onSelfDescription onSelfImgs onBotDe
 
             OnOther =
                 create onOtherDescription onOtherImgs
+
+            Cooldownable =
+                None
         }
 
 let createCommandWithRandomImages2 id names onSelfDescription isOnSelfImg onBotDescription isOnBotImg onTargetDescription isOnTargetImg imageUrls =
@@ -56,39 +63,48 @@ let createCommandWithRandomImages2 id names onSelfDescription isOnSelfImg onBotD
             OnSelf =
                 imageUrls
                 |> Array.map (fun imageUrl ->
-                    {
-                        Content = None
-                        Embed =
-                            {
-                                Description = Some onSelfDescription
-                                ImageUrl = if isOnSelfImg then Some imageUrl else None
-                            }
-                    }
+                    Reaction.create
+                        1
+                        {
+                            Content = None
+                            Embed =
+                                {
+                                    Description = Some onSelfDescription
+                                    ImageUrl = if isOnSelfImg then Some imageUrl else None
+                                }
+                        }
                 )
             OnBot =
                 imageUrls
                 |> Array.map (fun imageUrl ->
-                    {
-                        Content = None
-                        Embed =
-                            {
-                                Description = Some onBotDescription
-                                ImageUrl = if isOnBotImg then Some imageUrl else None
-                            }
-                    }
+                    Reaction.create
+                        1
+                        {
+                            Content = None
+                            Embed =
+                                {
+                                    Description = Some onBotDescription
+                                    ImageUrl = if isOnBotImg then Some imageUrl else None
+                                }
+                        }
                 )
             OnOther =
                 imageUrls
                 |> Array.map (fun imageUrl ->
-                    {
-                        Content = None
-                        Embed =
-                            {
-                                Description = Some onTargetDescription
-                                ImageUrl = if isOnTargetImg then Some imageUrl else None
-                            }
-                    }
+                    Reaction.create
+                        1
+                        {
+                            Content = None
+                            Embed =
+                                {
+                                    Description = Some onTargetDescription
+                                    ImageUrl = if isOnTargetImg then Some imageUrl else None
+                                }
+                        }
                 )
+
+            Cooldownable =
+                None
         }
 
 let createCommandWithRandomImages id names onSelfDescription onBotDescription onTargetDescription imageUrls =
@@ -111,39 +127,46 @@ let createCommandWithRandomDescriptions id names onSelfDescription onBotDescript
             OnSelf =
                 descriptions
                 |> Array.map (fun description ->
-                    {
-                        Content = None
-                        Embed =
-                            {
-                                Description = Some (onSelfDescription description)
-                                ImageUrl = Some imageUrl
-                            }
-                    }
+                    Reaction.create
+                        1
+                        {
+                            Content = None
+                            Embed =
+                                {
+                                    Description = Some (onSelfDescription description)
+                                    ImageUrl = Some imageUrl
+                                }
+                        }
                 )
             OnBot =
                 descriptions
                 |> Array.map (fun description ->
-                    {
-                        Content = None
-                        Embed =
-                            {
-                                Description = Some (onBotDescription description)
-                                ImageUrl = None
-                            }
-                    }
+                    Reaction.create
+                        1
+                        {
+                            Content = None
+                            Embed =
+                                {
+                                    Description = Some (onBotDescription description)
+                                    ImageUrl = None
+                                }
+                        }
                 )
             OnOther =
                 descriptions
                 |> Array.map (fun description ->
-                    {
-                        Content = None
-                        Embed =
-                            {
-                                Description = Some (onTargetDescription description)
-                                ImageUrl = Some imageUrl
-                            }
-                    }
+                    Reaction.create
+                        1
+                        {
+                            Content = None
+                            Embed =
+                                {
+                                    Description = Some (onTargetDescription description)
+                                    ImageUrl = Some imageUrl
+                                }
+                        }
                 )
+            Cooldownable = None
         }
 
 let commands: Command [] =
