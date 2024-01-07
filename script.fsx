@@ -1174,7 +1174,6 @@ let commands: Command [] =
         let gifs =
             [|
                 "https://media.tenor.com/Lg21skpXtU4AAAAC/cat-meme.gif"
-                "https://media.tenor.com/-WxqpxyUTD4AAAAС/daladada-cat.gif"
                 "https://media.tenor.com/PGnGqfkIuLYAAAAC/cat-head.gif"
                 "https://media.tenor.com/_zVIdn3Ok_cAAAAC/cat-scream.gif"
                 "https://media.tenor.com/t5HqHfs2_sEAAAAC/cat-kitten.gif"
