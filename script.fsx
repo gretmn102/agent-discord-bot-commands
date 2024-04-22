@@ -1655,10 +1655,10 @@ let commands: Command [] =
 
                 OnSelf = [|
                     createReaction
-                        "<@authorMention> появляется в Лоо, и местные жарят в честь этого готовят шашлычок:"
+                        "<@authorMention> появляется в Лоо, и местные готовят в честь этого шашлычок:"
                         "https://cdn.discordapp.com/attachments/1231938737429155840/1231946568782057482/original.gif"
                     createReaction
-                        "<@authorMention> появляется в Лоо, и местные жарят в честь этого жарят шашлычок:"
+                        "<@authorMention> появляется в Лоо, и местные жарят в честь этого шашлычок:"
                         "https://cdn.discordapp.com/attachments/1231938737429155840/1231946702429098064/Wss1.gif"
                     createReaction
                         "Поездка в Лоо — слишком дорогое удовольствие, поэтому <@authorMention> устраивает его себе дома:"
