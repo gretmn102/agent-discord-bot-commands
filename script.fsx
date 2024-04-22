@@ -1699,6 +1699,9 @@ let commands: Command [] =
                     createReaction
                         "<@authorMention> собирает манатки в Лоо:"
                         "https://cdn.discordapp.com/attachments/1231938737429155840/1231951688362098801/packing-bag.gif"
+                    createReaction
+                        "<@authorMention> пьет в баре Лоо:"
+                        "https://c.tenor.com/rFxgk1VpeYEAAAAC/tenor.gif"
                 |]
 
                 OnBot = [|
