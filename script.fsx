@@ -882,7 +882,6 @@ let commands: Command [] =
                 "https://media.tenor.com/saVFWCC23KoAAAAd/cat-fight-cats-fighting.gif"
                 "https://media.tenor.com/l5sIE_3H3EEAAAAd/cats-fighting-fighting-cats.gif"
                 "https://media.tenor.com/Y2JNQLkzz8sAAAAd/cats-funny.gif"
-                "https://media.tenor.com/LGHg3qvEKJgAAAAd/funny-animals-animals.gif"
                 "https://media.tenor.com/TPDruIOzoEkAAAAC/kitten-smol.gif"
             |]
             |> createCommandWithRandomImages2
