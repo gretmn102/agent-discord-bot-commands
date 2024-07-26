@@ -2034,8 +2034,12 @@ let commands: Command [] =
                     None
             }
 
-        let danceSelfReactions =
-                [|
+        yield Command.create
+            (CommandId.tryDeserialize "06d9b434-a3e3-4551-b30c-b2338f648819" |> Result.get)
+            {
+                Names = [| "танец"; "танцевать"; "танцует" |]
+
+                OnSelf = [|
                     createReaction
                         "<@authorMention> танцует:"
                         "https://media.tenor.com/kQA86PqyXZQAAAAi/small-dancing-white-cat-dance-funny.gif"
@@ -2094,13 +2098,6 @@ let commands: Command [] =
                         "<@authorMention> танцует:"
                         "https://media.tenor.com/r-nqpCc0mT8AAAAi/dance.gif"
                 |]
-
-        yield Command.create
-            (CommandId.tryDeserialize "06d9b434-a3e3-4551-b30c-b2338f648819" |> Result.get)
-            {
-                Names = [| "танец"; "танцевать"; "танцует" |]
-
-                OnSelf = danceSelfReactions
 
                 OnBot = [|
                     Reaction.create
