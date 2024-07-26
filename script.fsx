@@ -2067,7 +2067,7 @@ let commands: Command [] =
                         "<@authorMention> пускается в зажигательный танец:"
                         "https://cdn.discordapp.com/attachments/859253126878724126/1007408454534713384/ass.gif"
                     createReaction
-                        "<@authorMention> танцует брекдэнс:"
+                        "<@authorMention> танцует брейк-данс:"
                         "https://c.tenor.com/DTFWkey880EAAAAC/tenor.gif"
                     createReaction
                         "<@authorMention> танцует:"
