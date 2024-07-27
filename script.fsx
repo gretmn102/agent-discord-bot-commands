@@ -20,21 +20,23 @@ let createReaction description imageUrl =
                 }
         }
 
+let createReactionDescription description =
+    Reaction.create
+        1
+        {
+            Content = None
+            Embed =
+                {
+                    Description = Some description
+                    ImageUrl = None
+                }
+        }
 
 let createCommandWithRandomImages3 id names onSelfDescription onSelfImgs onBotDescription onBotImgs onOtherDescription onOtherImgs =
     let create description images =
         if Array.isEmpty images then
             [|
-                Reaction.create
-                    1
-                    {
-                        Content = None
-                        Embed =
-                            {
-                                Description = Some description
-                                ImageUrl = None
-                            }
-                    }
+                createReactionDescription description
             |]
         else
             images
@@ -145,16 +147,9 @@ let createCommandWithRandomDescriptions id names onSelfDescription onBotDescript
             OnBot =
                 descriptions
                 |> Array.map (fun description ->
-                    Reaction.create
-                        1
-                        {
-                            Content = None
-                            Embed =
-                                {
-                                    Description = Some (onBotDescription description)
-                                    ImageUrl = None
-                                }
-                        }
+                    createReactionDescription (
+                        onBotDescription description
+                    )
                 )
             OnOther =
                 descriptions
@@ -1954,16 +1949,7 @@ let commands: Command [] =
                 |]
 
                 OnBot = [|
-                    Reaction.create
-                        1
-                        {
-                            Content = None
-                            Embed =
-                                {
-                                    Description = Some "Никакого Лоо в мою смену! 😾"
-                                    ImageUrl = None
-                                }
-                        }
+                    createReactionDescription "Никакого Лоо в мою смену! 😾"
                 |]
 
                 OnOther = [|
@@ -1997,16 +1983,7 @@ let commands: Command [] =
                 |]
 
                 OnBot = [|
-                    Reaction.create
-                        1
-                        {
-                            Content = None
-                            Embed =
-                                {
-                                    Description = Some "Я и так знаю свою судьбу! 😾"
-                                    ImageUrl = None
-                                }
-                        }
+                    createReactionDescription "Я и так знаю свою судьбу! 😾"
                 |]
 
                 OnOther = [|
@@ -2100,16 +2077,7 @@ let commands: Command [] =
                 |]
 
                 OnBot = [|
-                    Reaction.create
-                        1
-                        {
-                            Content = None
-                            Embed =
-                                {
-                                    Description = Some "Никаких танцулек в мою смену! 😾"
-                                    ImageUrl = None
-                                }
-                        }
+                    createReactionDescription "Никаких танцулек в мою смену! 😾"
                 |]
 
                 OnOther = [|
@@ -2261,16 +2229,7 @@ let commands: Command [] =
                 OnSelf = messages
 
                 OnBot = [|
-                    Reaction.create
-                        1
-                        {
-                            Content = None
-                            Embed =
-                                {
-                                    Description = Some "Никаких танцулек в мою смену! 😾"
-                                    ImageUrl = None
-                                }
-                        }
+                    createReactionDescription "Никаких танцулек в мою смену! 😾" // todo: fix на евгенек
                 |]
 
                 OnOther = messages
@@ -2279,40 +2238,16 @@ let commands: Command [] =
                     Cooldownable.create
                         (System.TimeSpan(12, 0, 0).Ticks)
                         [|
-                            Reaction.create
-                                1
-                                {
-                                    Content = None
-                                    Embed =
-                                        {
-                                            Description = Some "Не трогайте Евгеньку: он отвечает каждому только раз в 12 часов."
-                                            ImageUrl = None
-                                        }
-                                }
+                            createReactionDescription
+                                "Не трогайте Евгеньку: он отвечает каждому только раз в 12 часов."
                         |]
                         [|
-                            Reaction.create
-                                1
-                                {
-                                    Content = None
-                                    Embed =
-                                        {
-                                            Description = Some "Не трогайте Евгеньку: он отвечает каждому только раз в 12 часов."
-                                            ImageUrl = None
-                                        }
-                                }
+                            createReactionDescription
+                                "Не трогайте Евгеньку: он отвечает каждому только раз в 12 часов."
                         |]
                         [|
-                            Reaction.create
-                                1
-                                {
-                                    Content = None
-                                    Embed =
-                                        {
-                                            Description = Some "Не трогайте Евгеньку: он отвечает каждому только раз в 12 часов."
-                                            ImageUrl = None
-                                        }
-                                }
+                            createReactionDescription
+                                "Не трогайте Евгеньку: он отвечает каждому только раз в 12 часов."
                         |]
                     |> Some
             }
