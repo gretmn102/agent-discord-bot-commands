@@ -2116,6 +2116,27 @@ let commands: Command [] =
                     createReaction
                         "<@authorMention> танцует с <@targetMention> на фоне луны:"
                         "https://c.tenor.com/G8yybLyvHKsAAAAC/tenor.gif"
+                    createReaction
+                        "<@authorMention> танцует с <@targetMention>:"
+                        "https://media.tenor.com/XEtDtLZg8usAAAAd/spinning-xuxa.gif"
+                    createReaction
+                        "<@authorMention> танцует с <@targetMention>:"
+                        "https://media.tenor.com/n3zeXSJMwM0AAAAd/dancing-friends.gif"
+                    createReaction
+                        "<@authorMention> танцует с <@targetMention>:"
+                        "https://media.tenor.com/CfcJDdQUtiAAAAAd/gatinho-dan%C3%A7ante.gif"
+                    createReaction
+                        "<@authorMention> танцует с <@targetMention>:"
+                        "https://media.tenor.com/v4jhYVrAPA4AAAAd/dancing-jordan-fisher.gif"
+                    createReaction
+                        "<@authorMention> танцует с <@targetMention>:"
+                        "https://media.tenor.com/J4xTl0CHtsYAAAAd/manx-manx-dancing.gif"
+                    createReaction
+                        "<@authorMention> танцует с <@targetMention>:"
+                        "https://media.tenor.com/w3tqEgUcrLUAAAAd/love-dance.gif"
+                    createReaction
+                        "<@authorMention> танцует с <@targetMention>:"
+                        "https://media.tenor.com/bVlx0j6rztMAAAAd/urgant-brezhneva.gif"
                 |]
 
                 Cooldownable =
