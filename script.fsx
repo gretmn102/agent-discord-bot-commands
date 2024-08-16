@@ -2311,6 +2311,31 @@ let commands: Command [] =
 
                 Cooldownable = None
             }
+
+        let reactions =
+            [|
+                createReaction
+                    "<@authorMention> изображает Романа:"
+                    "https://cdn.discordapp.com/attachments/1162103667969765519/1274020343039918090/RomanRipLog.gif"
+            |]
+
+        yield Command.create
+            (CommandId.tryDeserialize "46b21435-5207-428c-92d5-a2f4697006ef" |> Result.get)
+            {
+                Names = [|
+                    "роман"
+                |]
+
+                OnSelf = reactions
+
+                OnBot = [|
+                    createReactionDescription "Никаких Романов в мою смену! 😾"
+                |]
+
+                OnOther = reactions
+
+                Cooldownable = None
+            }
     |]
 
 let testUniqIds () =
