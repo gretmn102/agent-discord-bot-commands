@@ -306,6 +306,7 @@ let commands: Command [] =
                 "https://media.tenor.com/p9AJkXcmJucAAAAC/nom-tik-tok.gif"
                 "https://cdn.discordapp.com/attachments/876498372939382784/948864222912204800/03e6f05d01f87f934a5c2b547bf77e61.jpg"
                 "https://media.tenor.com/snjr2hMxcs8AAAAd/funny-animals-kitty.gif"
+                "https://c.tenor.com/e3XWGaLSpW4AAAAd/tenor.gif"
             |]
             |> createCommandWithRandomImages
                 (CommandId.tryDeserialize "a453fb4d-c9f8-46b5-802b-4534a665a2c3" |> Result.get)
