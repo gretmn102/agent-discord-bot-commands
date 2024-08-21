@@ -2075,6 +2075,9 @@ let commands: Command [] =
                     createReaction
                         "<@authorMention> танцует:"
                         "https://media.tenor.com/r-nqpCc0mT8AAAAi/dance.gif"
+                    createReaction
+                        "<@authorMention> танцует:"
+                        "https://c.tenor.com/6yMqezH9zcIAAAAd/tenor.gif"
                 |]
 
                 OnBot = [|
