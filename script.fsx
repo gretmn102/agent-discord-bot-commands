@@ -2296,6 +2296,9 @@ let commands: Command [] =
                 createReaction
                     "<@authorMention> изображает Злюку:"
                     "https://cdn.discordapp.com/attachments/929387581194510347/1271885445189603449/20240607_191138-removebg-preview.png"
+                createReaction
+                    "<@authorMention> изображает Злюку:"
+                    "https://cdn.discordapp.com/attachments/929387581194510347/1279046022609240165/Screenshot_20240826_173627_org.mozilla.firefox-removebg-preview.png"
             |]
 
         yield Command.create
