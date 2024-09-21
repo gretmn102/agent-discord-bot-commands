@@ -2324,6 +2324,9 @@ let commands: Command [] =
                 createReaction
                     "<@authorMention> изображает Романа:"
                     "https://cdn.discordapp.com/attachments/1162103667969765519/1274020343039918090/RomanRipLog.gif"
+                createReaction
+                    "<@authorMention> изображает Романа:"
+                    "https://cdn.discordapp.com/attachments/930127222373777509/1287108434629754921/apepeGachi.gif"
             |]
 
         yield Command.create
