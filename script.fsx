@@ -1263,7 +1263,7 @@ let commands: Command [] =
                 "https://cdn.discordapp.com/attachments/1090297880981549136/1090298524664594543/image0.gif"
                 "https://media.tenor.com/WvkIVYcwGfEAAAAd/cat-sleeping.gif"
                 "https://media.tenor.com/y8NOCYSyd-AAAAAd/cat-petting-cat.gif"
-                "https://vgif.ru/gifs/166/vgif-ru-39489.gif"
+                "https://cdn.discordapp.com/attachments/859253126878724126/1287109653993488394/vgif-ru-39489.gif"
             |]
 
         yield
