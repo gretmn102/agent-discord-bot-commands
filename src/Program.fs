@@ -1,6 +1,3 @@
-#load @".paket\load\netcoreapp3.1\main.group.fsx"
-#r @"paket-files\github.com\gretmn102\DiscordCommandBot\deploy\agent-discord-bot.dll"
-
 open FsharpMyExtension
 open FsharpMyExtension.ResultExt
 open CustomCommand.Model
