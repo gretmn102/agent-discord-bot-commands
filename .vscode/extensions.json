@@ -6,6 +6,7 @@
 	"recommendations": [
 		"Ionide.Ionide-fsharp",
 		"EditorConfig.EditorConfig",
+        "Ionide.Ionide-Paket",
 	],
 	// List of extensions recommended by VS Code that should not be recommended for users of this workspace.
 	"unwantedRecommendations": [
