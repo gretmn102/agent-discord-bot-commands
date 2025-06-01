@@ -12,6 +12,7 @@
   <ItemGroup>
     <Compile Include="Utils.fs" />
     <Compile Include="commands/Take.fs" />
+    <Compile Include="commands/FairyTail.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
   <Import Project="..\.paket\Paket.Restore.targets" />
