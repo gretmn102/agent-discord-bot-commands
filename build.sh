@@ -1,6 +1,6 @@
-cls
+#!/bin/bash
 
 dotnet tool restore
 dotnet paket install
-@REM dotnet build -c Release
+# dotnet build -c Release
 dotnet run --project src/AgentDiscordBotCommands.fsproj
