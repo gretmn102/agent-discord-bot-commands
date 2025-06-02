@@ -20,6 +20,7 @@
     <Compile Include="commands\Catch.fs" />
     <Compile Include="commands\Angry.fs" />
     <Compile Include="commands\Bite.fs" />
+    <Compile Include="commands\Shashlik.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
   <Import Project="..\.paket\Paket.Restore.targets" />
