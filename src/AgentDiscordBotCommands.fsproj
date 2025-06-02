@@ -31,6 +31,7 @@
     <Compile Include="commands\Hide.fs" />
     <Compile Include="commands\Snatch.fs" />
     <Compile Include="commands\Cheek.fs" />
+    <Compile Include="commands\Nevermind.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
   <Import Project="..\.paket\Paket.Restore.targets" />
