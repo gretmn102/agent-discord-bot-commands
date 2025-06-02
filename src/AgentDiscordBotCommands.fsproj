@@ -24,6 +24,7 @@
     <Compile Include="commands\CookieCatsShip.fs" />
     <Compile Include="commands\Noodle.fs" />
     <Compile Include="commands\ValerijAleksandrovich.fs" />
+    <Compile Include="commands\Adalinda.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
   <Import Project="..\.paket\Paket.Restore.targets" />
