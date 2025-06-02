@@ -15,6 +15,7 @@
     <Compile Include="commands/FairyTail.fs" />
     <Compile Include="commands\Tail.fs" />
     <Compile Include="commands\Bully.fs" />
+    <Compile Include="commands\Admire.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
   <Import Project="..\.paket\Paket.Restore.targets" />
