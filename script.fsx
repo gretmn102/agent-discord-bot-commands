@@ -15,6 +15,7 @@ module Source =
             ""
             "let command ="
             content
+            ""
         ] |> String.concat "\n"
 
     let create moduleName fileName content : Source = {
