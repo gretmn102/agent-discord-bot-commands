@@ -35,6 +35,7 @@
     <Compile Include="commands\Maksim.fs" />
     <Compile Include="commands\Manul.fs" />
     <Compile Include="commands\Svetlana.fs" />
+    <Compile Include="commands\Muhlevshica.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
   <Import Project="..\.paket\Paket.Restore.targets" />
