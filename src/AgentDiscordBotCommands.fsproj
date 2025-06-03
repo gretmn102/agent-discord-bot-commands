@@ -48,6 +48,8 @@
     <Compile Include="commands\Paw.fs" />
     <Compile Include="commands\Peek.fs" />
     <Compile Include="commands\FlirtyEyes.fs" />
+    <Compile Include="commands\Sleep.fs" />
+    <Compile Include="commands\Sleep.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
   <Import Project="..\.paket\Paket.Restore.targets" />
