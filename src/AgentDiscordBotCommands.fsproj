@@ -47,6 +47,7 @@
     <Compile Include="commands\Womanizer.fs" />
     <Compile Include="commands\Paw.fs" />
     <Compile Include="commands\Peek.fs" />
+    <Compile Include="commands\FlirtyEyes.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
   <Import Project="..\.paket\Paket.Restore.targets" />
