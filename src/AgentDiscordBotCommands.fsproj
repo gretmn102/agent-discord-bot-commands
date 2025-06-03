@@ -44,6 +44,7 @@
     <Compile Include="commands\Plead.fs" />
     <Compile Include="commands\Attack.fs" />
     <Compile Include="commands\Drama.fs" />
+    <Compile Include="commands\Womanizer.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
   <Import Project="..\.paket\Paket.Restore.targets" />
