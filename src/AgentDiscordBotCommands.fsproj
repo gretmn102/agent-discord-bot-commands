@@ -79,6 +79,7 @@
     <Compile Include="commands\Fortune.fs" />
     <Compile Include="commands\Dance.fs" />
     <Compile Include="commands\Evgenka.fs" />
+    <Compile Include="commands\Sommelier.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
   <Import Project="..\.paket\Paket.Restore.targets" />
