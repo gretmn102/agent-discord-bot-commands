@@ -49,7 +49,6 @@
     <Compile Include="commands\Peek.fs" />
     <Compile Include="commands\FlirtyEyes.fs" />
     <Compile Include="commands\Sleep.fs" />
-    <Compile Include="commands\Sleep.fs" />
     <Compile Include="commands\Buzz.fs" />
     <Compile Include="commands\AirKiss.fs" />
     <Compile Include="Program.fs" />
