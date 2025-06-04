@@ -54,6 +54,7 @@
     <Compile Include="commands\ChristmasTree.fs" />
     <Compile Include="commands\Snow.fs" />
     <Compile Include="commands\Hug.fs" />
+    <Compile Include="commands\Mlem.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
   <Import Project="..\.paket\Paket.Restore.targets" />
