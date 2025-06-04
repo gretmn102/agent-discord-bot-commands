@@ -47,7 +47,7 @@ let commands: Command [] =
         yield Sleep.command
         yield Buzz.command
 
-        yield
+        yield // todo: не знаю, как перевести команду. Caresses — очень общее, fondle — это вообще мять груди. Rub, быть может?
             createCommandWithRandomImages3
                 (CommandId.tryDeserialize "8da29f55-fb38-4de9-b40b-caa9a0cba489" |> Result.get)
                 [| "ластиться"; "ластится"; "тереться" |]
@@ -65,25 +65,7 @@ let commands: Command [] =
                     "https://media.tenor.com/twkOV4hc7JUAAAAd/kitty-cat.gif"
                 |]
 
-        let urls =
-            [|
-                "https://media.tenor.com/SFj-19Vp3YkAAAAC/kiss-flying.gif"
-                "https://media.tenor.com/vmrR0VoDVRkAAAAC/blow-kiss-anime-blow-kiss.gif"
-                "https://media.tenor.com/R1y3qRkSRwkAAAAC/anime-girl.gif"
-                "https://media.tenor.com/43qt_qk-LWkAAAAC/cute-anime.gif"
-                "https://media.tenor.com/7s-3eQ3MNtsAAAAC/laughs-kiis.gif"
-            |]
-
-        yield
-            createCommandWithRandomImages3
-                (CommandId.tryDeserialize "4667fdc1-7d6f-4bef-960e-d3521cdae1fe" |> Result.get)
-                [| "воздушныйПоцелуй"; "поцелуй" |]
-                "<@authorMention> посылает воздушный поцелуй:"
-                urls
-                "<@authorMention>, мне роботу, из цифровой плоти и холодных логических цепей, чужда теплота двуногих, но все равно спасибо, бип-буп."
-                [||]
-                "<@authorMention> посылает воздушный поцелуй <@targetMention>:"
-                urls
+        yield AirKiss.command
 
         let urls =
             [|
