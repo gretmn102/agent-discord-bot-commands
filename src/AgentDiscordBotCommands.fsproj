@@ -61,6 +61,7 @@
     <Compile Include="commands\Punish.fs" />
     <Compile Include="commands\Lunaris.fs" />
     <Compile Include="commands\Riot.fs" />
+    <Compile Include="commands\Pat.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
   <Import Project="..\.paket\Paket.Restore.targets" />
