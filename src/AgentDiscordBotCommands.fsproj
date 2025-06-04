@@ -68,6 +68,7 @@
     <Compile Include="commands\Viola.fs" />
     <Compile Include="commands\Flowers.fs" />
     <Compile Include="commands\Badminton.fs" />
+    <Compile Include="commands\Jungledrum700.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
   <Import Project="..\.paket\Paket.Restore.targets" />
