@@ -77,6 +77,7 @@
     <Compile Include="commands\CookieOk.fs" />
     <Compile Include="commands\Loo.fs" />
     <Compile Include="commands\Fortune.fs" />
+    <Compile Include="commands\Dance.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
   <Import Project="..\.paket\Paket.Restore.targets" />
