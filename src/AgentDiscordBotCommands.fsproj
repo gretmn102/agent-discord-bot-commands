@@ -57,6 +57,7 @@
     <Compile Include="commands\Mlem.fs" />
     <Compile Include="commands\Tigidik.fs" />
     <Compile Include="commands\BiteCheek.fs" />
+    <Compile Include="commands\Yell.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
   <Import Project="..\.paket\Paket.Restore.targets" />
