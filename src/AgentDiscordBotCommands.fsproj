@@ -51,6 +51,7 @@
     <Compile Include="commands\Sleep.fs" />
     <Compile Include="commands\Buzz.fs" />
     <Compile Include="commands\AirKiss.fs" />
+    <Compile Include="commands\ChristmasTree.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
   <Import Project="..\.paket\Paket.Restore.targets" />
