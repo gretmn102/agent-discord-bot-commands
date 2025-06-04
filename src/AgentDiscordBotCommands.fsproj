@@ -75,6 +75,7 @@
     <Compile Include="commands\Poke.fs" />
     <Compile Include="commands\Lazy.fs" />
     <Compile Include="commands\CookieOk.fs" />
+    <Compile Include="commands\Loo.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
   <Import Project="..\.paket\Paket.Restore.targets" />
