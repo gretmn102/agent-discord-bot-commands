@@ -63,6 +63,7 @@
     <Compile Include="commands\Riot.fs" />
     <Compile Include="commands\Pat.fs" />
     <Compile Include="commands\Boomerang.fs" />
+    <Compile Include="commands\Kiss.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
   <Import Project="..\.paket\Paket.Restore.targets" />
