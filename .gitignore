@@ -2,5 +2,3 @@
 obj/
 bin/
 /output.json
-# todo: удалить
-/script.fsx
