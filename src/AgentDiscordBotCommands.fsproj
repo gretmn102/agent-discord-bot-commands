@@ -72,6 +72,7 @@
     <Compile Include="commands\Arrows.fs" />
     <Compile Include="commands\Witch.fs" />
     <Compile Include="commands\Coffee.fs" />
+    <Compile Include="commands\Poke.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
   <Import Project="..\.paket\Paket.Restore.targets" />
