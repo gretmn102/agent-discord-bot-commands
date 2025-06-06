@@ -4,6 +4,17 @@ open CustomCommand.Model
 let genId () =
     System.Guid.NewGuid() |> sprintf "(CommandId.tryDeserialize \"%A\" |> Result.get)" |> Clipboard.setText
 
+let testUniqIds (commands: Command []) =
+    commands
+    |> Array.fold
+        (fun ids x ->
+            if Set.contains x.Id ids then
+                failwithf "%A not uniq!" x.Id
+            Set.add x.Id ids
+        )
+        Set.empty
+    |> ignore
+
 let createReaction description imageUrl =
     Reaction.create
         1
