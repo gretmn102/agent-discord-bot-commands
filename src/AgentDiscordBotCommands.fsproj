@@ -87,6 +87,7 @@
     <Compile Include="commands\Antiwitch.fs" />
     <Compile Include="commands\Sandal.fs" />
     <Compile Include="commands\MagicBall.fs" />
+    <Compile Include="commands\Cuddle.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
   <Import Project="..\.paket\Paket.Restore.targets" />
