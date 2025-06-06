@@ -1,89 +1,87 @@
 open FsharpMyExtension
-open FsharpMyExtension.ResultExt
 open CustomCommand.Model
 
-open AgentDiscordBot.Commands.Utils
 open AgentDiscordBot.Commands.Commands
 
 let commands: Command [] =
     [|
-        yield Take.command
-        yield FairyTail.command
-        yield Tail.command
-        yield Bully.command
-        yield Admire.command
-        yield Battery.command
-        yield Catch.command
-        yield Angry.command
-        yield Bite.command
-        yield Shashlik.command
-        yield CookieCatsShip.command
-        yield Noodle.command
-        yield ValerijAleksandrovich.command
-        yield Adalinda.command
-        yield Moraj.command
-        yield Agent.command
-        yield Massage.command
-        yield Hide.command
-        yield Snatch.command
-        yield Cheek.command
-        yield Nevermind.command
-        yield Maksim.command
-        yield Manul.command
-        yield Svetlana.command
-        yield Muhlevshica.command
-        yield Muhlevshik.command
-        yield Lina.command
-        yield Yana.command
-        yield Mumble.command
-        yield Run.command
-        yield Plead.command
-        yield Attack.command
-        yield Drama.command
-        yield Womanizer.command
-        yield Paw.command
-        yield Peek.command
-        yield FlirtyEyes.command
-        yield Sleep.command
-        yield Buzz.command
-        yield Cuddle.command
-        yield AirKiss.command
-        yield ChristmasTree.command
-        yield Snow.command
-        yield Hug.command
-        yield Mlem.command
-        yield Tigidik.command
-        yield BiteCheek.command
-        yield Yell.command
-        yield Punish.command
-        yield Lunaris.command
-        yield Riot.command
-        yield Pat.command
-        yield Boomerang.command
-        yield Kiss.command
-        yield Sing.command
-        yield Viola.command
-        yield Flowers.command
-        yield Badminton.command
-        yield Jungledrum700.command
-        yield Arrows.command
-        yield Witch.command
-        yield Coffee.command
-        yield Poke.command
-        yield Lazy.command
-        yield CookieOk.command
-        yield Loo.command
-        yield Fortune.command
-        yield Dance.command
-        yield Evgenka.command
-        yield Sommelier.command
-        yield Zluka.command
-        yield Roman.command
-        yield Glazastaja.command
-        yield Topic.command
-        yield Antiwitch.command
-        yield Sandal.command
-        yield MagicBall.command
+        Take.command
+        FairyTail.command
+        Tail.command
+        Bully.command
+        Admire.command
+        Battery.command
+        Catch.command
+        Angry.command
+        Bite.command
+        Shashlik.command
+        CookieCatsShip.command
+        Noodle.command
+        ValerijAleksandrovich.command
+        Adalinda.command
+        Moraj.command
+        Agent.command
+        Massage.command
+        Hide.command
+        Snatch.command
+        Cheek.command
+        Nevermind.command
+        Maksim.command
+        Manul.command
+        Svetlana.command
+        Muhlevshica.command
+        Muhlevshik.command
+        Lina.command
+        Yana.command
+        Mumble.command
+        Run.command
+        Plead.command
+        Attack.command
+        Drama.command
+        Womanizer.command
+        Paw.command
+        Peek.command
+        FlirtyEyes.command
+        Sleep.command
+        Buzz.command
+        Cuddle.command
+        AirKiss.command
+        ChristmasTree.command
+        Snow.command
+        Hug.command
+        Mlem.command
+        Tigidik.command
+        BiteCheek.command
+        Yell.command
+        Punish.command
+        Lunaris.command
+        Riot.command
+        Pat.command
+        Boomerang.command
+        Kiss.command
+        Sing.command
+        Viola.command
+        Flowers.command
+        Badminton.command
+        Jungledrum700.command
+        Arrows.command
+        Witch.command
+        Coffee.command
+        Poke.command
+        Lazy.command
+        CookieOk.command
+        Loo.command
+        Fortune.command
+        Dance.command
+        Evgenka.command
+        Sommelier.command
+        Zluka.command
+        Roman.command
+        Glazastaja.command
+        Topic.command
+        Antiwitch.command
+        Sandal.command
+        MagicBall.command
     |]
 
 let testUniqIds () =
