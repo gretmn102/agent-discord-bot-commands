@@ -84,6 +84,7 @@
     <Compile Include="commands\Roman.fs" />
     <Compile Include="commands\Glazastaja.fs" />
     <Compile Include="commands\Topic.fs" />
+    <Compile Include="commands\Antiwitch.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
   <Import Project="..\.paket\Paket.Restore.targets" />

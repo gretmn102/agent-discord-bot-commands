@@ -99,29 +99,7 @@ let commands: Command [] =
         yield Roman.command
         yield Glazastaja.command
         yield Topic.command
-
-        let reactions =
-            [|
-                createReaction
-                    "<@authorMention> колет антиведьмин <@targetMention>"
-                    "https://cdn.discordapp.com/attachments/927554008263032836/1280590448481669128/Picsart_24-08-27_18-59-52-169.png"
-            |]
-
-        yield Command.create
-            (CommandId.tryDeserialize "58f9d5d4-ec9e-4581-8a86-c2d1be734839" |> Result.get)
-            {
-                Names = [| "антиведьмин" |]
-
-                OnSelf = reactions
-
-                OnBot = [|
-                    createReactionDescription "Кыш 😾"
-                |]
-
-                OnOther = reactions
-
-                Cooldownable = None
-            }
+        yield Antiwitch.command
 
         yield Command.create
             (CommandId.tryDeserialize "61750519-7339-4efa-9387-6a1952a4fd67" |> Result.get)
