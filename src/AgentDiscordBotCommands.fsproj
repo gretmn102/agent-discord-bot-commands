@@ -89,6 +89,7 @@
     <Compile Include="commands\MagicBall.fs" />
     <Compile Include="commands\Cuddle.fs" />
     <Compile Include="commands\Catapult.fs" />
+    <Compile Include="commands\StealPantsu.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
   <Import Project="..\.paket\Paket.Restore.targets" />

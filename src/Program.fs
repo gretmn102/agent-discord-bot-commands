@@ -83,6 +83,7 @@ let commands: Command [] =
         Sandal.command
         MagicBall.command
         Catapult.command
+        StealPantsu.command
     |]
 
 testUniqIds commands
