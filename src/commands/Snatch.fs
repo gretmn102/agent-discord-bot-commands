@@ -18,7 +18,7 @@ let command =
     |]
     |> createCommandWithRandomImages2
         (CommandId.tryDeserialize "bf674738-583f-4764-aef7-df390c673e0e" |> Result.get)
-        [| "украсть"; "snatch" |]
+        [| "steal"; "украсть"; "snatch" |]
         "<@authorMention> крадет себя:"
         true
         "Не надо меня красть! 🙀"
