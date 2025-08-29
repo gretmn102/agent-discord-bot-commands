@@ -10,6 +10,7 @@ let command =
         [| "сказка"; "fairyTail" |]
         "<@authorMention> читает сказку:"
         [|
+            // https://tenor.com/view/membaca-reading-military-strategy-cat-flipping-pages-gif-16640449
             "https://c.tenor.com/Lj5SFh_tVzkAAAAC/books-read.gif"
             "https://c.tenor.com/Vucu5O0U4FAAAAAC/cat-kitten.gif"
             "https://c.tenor.com/415n58OZ9CYAAAAd/cat-reads-reading.gif"
@@ -20,6 +21,6 @@ let command =
         [||]
         "<@authorMention> читает сказку для <@targetMention>"
         [|
-            "https://c.tenor.com/SajtOuJknfYAAAAd/cute-cat.gif"
+            // кот на книгах с надписью "Что читаем?". Альтернатива — https://tenor.com/view/pk3-writing-gif-8071370
             "https://c.tenor.com/Yw68weAL6c0AAAAC/knigi-kniga.gif"
         |]
