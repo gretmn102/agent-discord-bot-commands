@@ -45,6 +45,10 @@ let command =
                 createReaction
                     "<@authorMention> запускает тапок в <@targetMention> 🩴"
                     "https://media.tenor.com/Vy-J_T0Tn3sAAAAd/notforthinking-sandal.gif"
+                createReaction
+                    "<@authorMention> запускает тапок в <@targetMention> 🩴"
+                    // https://tenor.com/view/rebecca-michelson-damon-salvatore-annoyed-the-vampire-diaries-the-originals-gif-22604830
+                    "https://media.tenor.com/3tx3vzU-Th4AAAAd/rebecca-michelson-damon-salvatore.gif"
             |]
 
             Cooldownable = None
