@@ -84,6 +84,7 @@ let commands: Command [] =
         MagicBall.command
         Catapult.command
         StealPantsu.command
+        GiveBream.command
     |]
 
 testUniqIds commands
